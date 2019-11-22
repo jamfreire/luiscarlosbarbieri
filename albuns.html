@@ -4,24 +4,24 @@ title: Albuns
 ---
 <div class="container p-3 p-lg-5">
     <section id="albuns">
-            <h1>Álbuns</h1>
-            <ul class="list-unstyled lista-albuns row mt-4">
+            <h1 class="text-center mb-5">Álbuns</h1>
+            <div class="list-unstyled lista-albuns row">
                 {% for album in site.albuns %}
-                <li class="col-md-3 col-lg px-2 mb-4">
-                    <a href="{{ album.url }}" class="text-reset">
-                        <img src="{{ album.capa }}" alt="Capa do álbum">
-                        <h5>{{ album.titulo }}</h5>
+                <div class="col-md-3 col-lg px-2 mb-4">
+                    <a href="{{ album.url }}" class="text-reset text-decoration-none">
+                        <img class="mb-2" src="{{ site.baseurl }}{{ album.capa }}" alt="Capa do álbum">
+                        <h6>{{ album.titulo }}</h6>
                     </a>
-                </li>
+                </div>
                 {% endfor %}
-            </ul>
+            </div>
     </section>
 
     <section id="participacoes">
         <h2 class="mb-4 mb-md-5 text-center">Participações</h2>
         <div class="row">
             {% for album in site.data.participacoes %}
-            <div class="col-6 col-md-3 col-lg px-2 mb-4">
+            <div class="col-6 col-md-4 col-lg-3 px-2 mb-4">
                 <div class="media">
                     <a href="{{ album.link }}">
                         <img class="img-fluid mr-3" src="{{ album.capa }}" alt="Capa do álbum {{ album.titulo }}">

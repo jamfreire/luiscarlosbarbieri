@@ -16,7 +16,10 @@ permalink: /:title
 collections:
     albuns:
       output: true
-      permalink: /album/:name
+      permalink: /albuns/:name
+      order:
+        - oitis.md
+        - barbieri-schneiter-solo.md
     biografias:
       output: true
       permalink: /biografia/:name
