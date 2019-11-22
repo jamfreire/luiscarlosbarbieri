@@ -1,0 +1,22 @@
+# Site settings
+title: "Luis Carlos Barbieri"
+email: 
+description: "Site oficial do violonista e compositor Luis Carlos Barbieri"
+baseurl: "/luiscarlosbarbieri"
+url: "https://jamfreire.github.io"
+repo: http://github.com/jamfreire/luiscarlosbarbieri
+comments: false
+author:
+  name: "Jam Freire"
+
+# Build settings
+markdown: kramdown
+permalink: /:title
+
+collections:
+    albuns:
+      output: true
+      permalink: /album/:name
+    biografias:
+      output: true
+      permalink: /biografia/:name

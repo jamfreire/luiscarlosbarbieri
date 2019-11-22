@@ -1,0 +1,24 @@
+<ul class="navbar-nav w-100">
+    {% for item in site.data.navigation %}
+        {% if item.subcategories != null %}
+        <li {% if page.url == item.href %}class="nav-item dropdown active"{% else %}class="nav-item dropdown"{% endif %}>
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
+            <div class="dropdown-menu">
+                {% for subitem in item.subcategories %}
+                <a class="dropdown-item" href="{{ site.baseurl }}{{ subitem.href }}">{{ subitem.title }}</a>
+                {% endfor %}
+            </div>
+        </li>
+        {% elsif item.title == "navbar-brand" %}
+        <li class="nav-item navbar-brand">
+            <a class="nav-link pt-0" href="{{ site.baseurl }}">
+                <img src="{{ site.baseurl }}{{item.img}}" alt="{{ item.alt }}">
+            </a>
+        </li>
+        {% else %}
+        <li {% if page.url == item.href %}class="nav-item active"{% else %}class="nav-item"{% endif %}>
+            <a class="nav-link" href="{{ site.baseurl }}{{ item.href }}">{{ item.title }} <span class="sr-only">(current)</span></a>
+        </li>
+        {% endif %}
+    {% endfor %}
+</ul>

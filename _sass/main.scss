@@ -1,0 +1,147 @@
+$bg-cover: url('../../assets/images/cover.jpg');
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Nunito', sans-serif;
+  /*padding-top: 56px;*/
+}
+
+p {
+  font-size: 1.25em;
+  color: #495057;
+}
+
+section {
+	padding-top:30px;
+}
+
+footer .nav-head {
+  padding-bottom: 0.25rem !important;
+}
+
+.bg-gradient-light {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.bg-gradient-dark {
+  background-color: rgba(51, 51, 51, 0.7);
+}
+
+.bg-gradient-primary {
+  background-color: rgba(77, 118, 100, 0.7);
+}
+
+.lista-diferenciais li {
+  margin: 5px 0;
+  font-size: 1.2em;
+}
+
+.lista-diferenciais li .fa {
+  color: #4d7664;
+}
+
+.tab-albuns audio {
+  width: 100%;
+}
+
+.nav-albuns {
+  max-width: 280px;
+}
+
+.nav-albuns .active {
+  padding: 4px !important;
+}
+
+.navbar-main .navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 100%;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
+.navbar-main .navbar-brand {
+  margin: 0 !important;
+}
+
+.nav-link {
+  line-height: 1.25em;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.nav-link .fa {
+  font-size: 1.75em;
+}
+
+.navbar-brand img {
+  height: 35px;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-top: 68px;
+  }
+  .navbar-main {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+  }
+  .navbar-main .navbar-nav {
+    width: auto;
+  }
+  .navbar-shrink {
+	position:fixed;
+    background-color: #000 !important;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+  .navbar-shrink .navbar-brand {
+    display: inline;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  
+  .cover {
+    background-position: 65%;
+    padding-bottom: 0px;
+    height: 450px;
+  }
+  .cover .cover-content {
+    margin-top: 150px;
+    padding-left: 25px;
+  }
+}
+
+.cover {
+  background-image: $bg-cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 75%;
+  min-height: 320px;
+}
+
+@media (min-width: 992px) {
+  .cover {
+    background-position: center;
+  }
+  .cover .cover-content {
+    margin-top: 150px;
+    padding-left: 75px;
+  }
+}
+
+.entry-title {
+	text-align: center;
+}

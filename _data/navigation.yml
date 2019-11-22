@@ -1,0 +1,34 @@
+- title: Home
+  href: /
+
+- title: Biografia
+  subcategories:
+    - title: "Luis Carlos Barbieri"
+      href: /biografia
+    - title: "Fred Schneiter"
+      href: /fred-schneiter
+    - title: "Duo Barbieri-Schneiter"
+      href: /duo-barbieri-schneiter
+      
+- title: Álbuns
+  href: /albuns
+  
+- title: Partituras
+  href: /partituras
+  
+- title: navbar-brand 
+  href: /
+  img: /assets/images/logo-luis-carlos-barbieri.png
+  alt: "Luis Carlos Barbieri"
+  
+- title: Dissertações
+  href: /dissertacoes
+  
+- title: Fotos
+  href: /fotos
+  
+- title: Vídeos
+  href: /videos
+  
+- title: Contato
+  href: /contato

@@ -1,0 +1,22 @@
+---
+layout: default
+title: Dissertações
+---
+<section class="dissertacoes">
+    <div class="container p-3 p-lg-5">
+        <h1 class="text-center">Dissertações</h1>
+        <ul class="list-unstyled">
+            {% for item in site.data.dissertacoes %}
+            <li class="mb-4">
+                <h3>{{ item.titulo }}</h3>
+                <h4>{{ item.autor }}</h4>
+                <h5>{{ item.instituicao }}</h5>
+                <p>{{ item.ano }}</p>
+                {% if item.disponivel != null %}
+                    <p class="text-muted">{{ item.disponivel.nome }}. Disponível em: {{ item.disponivel.link }}</p>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>

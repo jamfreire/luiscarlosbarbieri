@@ -1,0 +1,19 @@
+---
+layout: default
+title: Vídeos
+---
+<section class="videos">
+    <div class="container p-3 p-lg-5">
+        <h1 class="text-center mb-4">{{ page.title }}</h1>
+        {% for video in site.data.videos  %}
+        <div class="row">
+            <div class="col-md-6 mb-5">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="{{ video.url }}" frameborder="0" allowfullscreen="allowfullscreen" alt="{{ video.titulo }}"></iframe>
+                </div>
+                <h4>{{ video.titulo }}</h4>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
