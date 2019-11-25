@@ -12,10 +12,10 @@ faixas:
   - nome: Cyribubu
     num: "01"
     tempo: "2:08"
-- nome: Desconcertante
+  - nome: Desconcertante
     num: "02"
     tempo: "2:16"
-- nome: Sambahia
+  - nome: Sambahia
     num: "03"
     tempo: "2:28"
 - nome: L. C. BARBIERI – Prelúdio e Dança Nº 1
@@ -23,7 +23,7 @@ faixas:
   - nome: Prelúdio
     num: "04"
     tempo: "2:15"
-- nome: Dança
+  - nome: Dança
     num: "05 "
     tempo: "1:46"
 - nome: FRED SCHNEITER – Álbum de Família
@@ -31,16 +31,16 @@ faixas:
   - nome: Pituba
     num: "06"
     tempo: "1:43"
-- nome: Tio Ary
+  - nome: Tio Ary
     num: "07"
     tempo: "2:18"
-- nome: Dona Lourdes
+  - nome: Dona Lourdes
     num: "08"
     tempo: "2:24"
-- nome: Meu Amigo CJ
+  - nome: Meu Amigo CJ
     num: "09"
     tempo: "2:18"
-- nome: Dona Mab
+  - nome: Dona Mab
     num: "10"
     tempo: "1:52"
 - nome: L. C. BARBIERI – 3 Estudos
@@ -48,10 +48,10 @@ faixas:
   - nome: Estudo 2
     num: "11"
     tempo: "1:45"
-- nome: Estudo 4
+  - nome: Estudo 4
     num: "12"
     tempo: "1:41"
-- nome: Estudo 1
+  - nome: Estudo 1
     num: "13"
     tempo: "2:01"
 - nome: FRED SCHNEITER – Garotice
@@ -59,7 +59,7 @@ faixas:
   - nome: Calmo
     num: "14"
     tempo: "1:44"
-- nome: Mais animado
+  - nome: Mais animado
     num: "15"
     tempo: "1:49"
 - nome: L. C. BARBIERI – 5 Perfumes
@@ -67,16 +67,16 @@ faixas:
   - nome: Perfume 2
     num: "16"
     tempo: "2:13"
-- nome: Perfume 4
+  - nome: Perfume 4
     num: "17"
     tempo: "0:52"
-- nome: Perfume 3
+  - nome: Perfume 3
     num: "18"
     tempo: "2:49"
-- nome: Perfume 7
+  - nome: Perfume 7
     num: "19"
     tempo: "1:22"
-- nome: Perfume 6
+  - nome: Perfume 6
     num: "20"
     tempo: "2:22"
 - nome: FRED SCHNEITER – Suíte Sinuosa
@@ -84,13 +84,13 @@ faixas:
   - nome: Mar Grande
     num: "21"
     tempo: "2:39"
-- nome: Cacha Prego
+  - nome: Cacha Prego
     num: "22 "
     tempo: "2:20"
-- nome: Vazio
+  - nome: Vazio
     num: "23"
     tempo: "0:37"
-- nome: Bestetu
+  - nome: Bestetu
     num: "24"
     tempo: "2:11"
 - nome: L. C. BARBIERI
