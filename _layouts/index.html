@@ -1,0 +1,54 @@
+---
+title: Luis Carlos Barbieri
+layout: default
+---
+
+<style>
+    .navbar-main .navbar-brand {
+        display: none;
+    }
+    .navbar-shrink .navbar-brand {
+        display: inline-block !important;
+    }
+</style>
+
+<div class="cover">
+    <div class="container d-flex h-100">
+        <div class="cover-content">
+            <a href="/"><img class="img-fluid d-none d-md-inline"
+                    src="{{ site.baseurl }}/assets/images/logo-luis-carlos-barbieri.png"
+                    alt="Logo Luis Carlos Barbieri" /></a>
+        </div>
+    </div>
+</div>
+
+<section id="about">
+    <div class="container py-3 py-lg-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-lg-3 mb-3 text-center text-md-left">
+                <img src="{{ site.baseurl }}/assets/images/luis-carlos-barbieri.png" class="img-fluid mx-auto" />
+            </div>
+            <div class="col-md-8">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<aside class="bg-primary text-white mb-4">
+    <div class="container p-4 p-md-5">
+        <div class="text-center mx-auto">
+            <h5 class="pb-2">Luis Carlos Barbieri coordena, desde 2004, a <strong>Mostra e Concurso Nacional de Violão
+                    Fred Schneiter</strong> considerado um dos principais Concursos de Violão do Brasil.</h5>
+            <a href="http://www.mostrafred.com/" class="btn btn-outline-light" target="_blank">Conheça o site da
+                Mostra</a>
+        </div>
+    </div>
+</aside>
+
+<section id="discografia">
+    <div class="container text-center text-md-left">
+        <h2 class="text-center mb-3 mb-lg-5">Álbuns</h2>
+        {% include nav-albuns-tab.html %}
+    </div>
+</section>

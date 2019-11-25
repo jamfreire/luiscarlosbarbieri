@@ -6,9 +6,13 @@ title: Luis Carlos Barbieri
 Luis Carlos Barbieri ficou conhecido com seu trabalho no [Duo Barbieri-Schneiter](/duo-barbieri-schneiter), com o qual realizou, por 14 anos, concertos nas principais Salas do Brasil, além da Argentina, México, Itália, Áustria, Suíça e Portugal. Com o
 Duo gravou 3 CDs no Santuário Ecológico do Caraça (MG). Está previsto o lançamento do quarto CD do Duo, com gravações de
 concertos ao vivo, entre 1988 e 1993, na Sala Cecília Meireles, Auditório Guiomar Novaes e Teatro da Aliança Francesa/
-RJ. A carreira do Duo foi interrompida com a morte prematura de <a href="{{ site.url }}fred-schneiter/">Fred Schneiter</a>, em 2001.
+RJ. A carreira do Duo foi interrompida com a morte prematura de [Fred Schneiter](/fred-schneiter), em 2001.
 
-Barbieri gravou, em 2002, o seu primeiro CD [Barbieri &amp; Schneiter solo](/barbieri-schneiter-solo), totalmente
+![Luis Carlos Barbieri]({{ site.baseurl }}/assets/images/luis-carlos-barbieri.jpg){: .img-fluid .my-3 max-width: 500}
+*Luis Carlos Barbieri - 2015. Foto: Alberto Lopes*{: .d-block .small }
+{: .text-center }
+
+Barbieri gravou, em 2002, o seu primeiro CD [Barbieri &amp; Schneiter solo](/album/barbieri-schneiter-solo), totalmente
 voltado para suas composições e as de Fred Schneiter. Participou como solista da trilha sonora do filme “O Outro lado da
 Rua”, de Marcos Bernstein (2004). Em 2006 gravou seu segundo CD solo intitulado “Violão Urbano” dedicado especialmente
 às obras de compositores brasileiros. Em 2003, sua música “Prelúdio e Dança nº 1” foi editada pela Edizioni Carrara (Itália) e lançada na Europa.
@@ -33,7 +37,7 @@ Desde 2008, é produtor e apresentador do programa semanal “Violões em Foco�
 acontecimentos do mundo violonístico e é veiculado no Rio de Janeiro, Brasília, Campinas e Salvador.
 
 Concluiu, em 2012, o Mestrado em Musicologia na UFRJ sob a orientação da Dra. Márcia Taborda cujo título é “Catalogo
-Geral e Revisão Crítica da Obra para Violão Solo de Fred Schneiter”. Ainda neste ano, lançou o CD [OITIS](/oitis), totalmente dedicado às composições de Sérgio Roberto de Oliveira, ao lado da soprano Mimy Cassiano e da flautista Maria Carolina Cavalcanti, que juntos formam o grupo OITIS.
+Geral e Revisão Crítica da Obra para Violão Solo de Fred Schneiter”. Ainda neste ano, lançou o CD [OITIS](/album/oitis), totalmente dedicado às composições de Sérgio Roberto de Oliveira, ao lado da soprano Mimy Cassiano e da flautista Maria Carolina Cavalcanti, que juntos formam o grupo OITIS.
 
 Em 2014, gravou para o programa da TV Brasil “Partituras”, inteiramente dedicado ao seu trabalho com o repertório
 composto por música brasileira para violão.

@@ -5,6 +5,7 @@ title: Oitis
 titulo: Oitis
 artista: Sergio Roberto de Oliveira
 ano: 2012
+capa: /assets/images/albuns/oitis.jpg
 faixas:
   - num: 01
     nome: Farsa

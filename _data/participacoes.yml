@@ -1,35 +1,42 @@
 - titulo: Marco Pereira – Camerístico
   obra: Dança dos Quatro Ventos
-  compositor: Marco Pereira
+  composicao: Marco Pereira
   interpretacao: Quarteto de Violões (João Luiz; Douglas Lora; Luis Carlos Barbieri; Marco Pereira)
+  capa: /assets/images/participacoes/cd-marco-pereira-cameristico.jpg
 
 - titulo: Violões da AV Rio Volume 2
   obra: A Santa Ceia Segundo Athayde
-  compositor: Luis Carlos Barbieri
+  composicao: Luis Carlos Barbieri
   interpretacao: Luis Carlos Barbieri
+  capa: /assets/images/participacoes/cd-violoes-av-rio-vol-2.jpg
 
 - titulo: Violões da AV-Rio Volume 3
   obra: Passacalha para Fred Schneiter
-  compositor: Edino Krieger
+  composicao: Edino Krieger
   interpretacao: Luis Carlos Barbieri
+  capa: /assets/images/participacoes/cd-violoes-av-rio-vol-3.jpg
 
 - titulo: O Desague – a música de Thomas Saboga
   obra: Choro pro Barbieri
-  compositor: Thomas Saboga
+  composicao: Thomas Saboga
   interpretacao: Luis Carlos Barbieri
+  capa: /assets/images/participacoes/cd-desague.jpg
 
 - titulo: The Rough Guide To Samba
   obra: Choro #2
-  compositor: João Pernambuco
+  composicao: João Pernambuco
   interpretacao: Duo Barbieri -Schneiter
+  capa: /assets/images/participacoes/cd-samba.jpg
 
 - titulo: Caio Senna – Primeiro Diálogo
   obra: Suíte – 3 Entrada; 4 Fuga
-  compositor: Caio Senna
+  composicao: Caio Senna
   interpretacao: Duo Barbieri-Schneiter
+  capa: /assets/images/participacoes/cd-caio-senna-primeiro-dialogo.jpg
 
 - titulo: Violões da AV Rio Volume 1
   obra: Seu Vicente
-  compositor: Fred Schneiter
+  composicao: Fred Schneiter
   interpretacao: Duo Barbieri-Schneiter
+  capa: /assets/images/participacoes/cd-violoes-av-rio-vol-1.jpg
 

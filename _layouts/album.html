@@ -3,23 +3,48 @@ layout: default
 ---
 <section class="album">
     <div class="container p-3 p-lg-5">
-        {% assign album = page.album %}
         <div class="row">
-            <div class="col-md-4 text-center">
-                <img src="{{ album.capa }}" alt="{{ album.title }}" class="album-capa" />
-                <h1>{{ album.titulo }}</h1>
-                <h2>{{ album.artista }}</h2>
-                <p>{{ album.ano }}</p>
+            <div class="col-md-4 text-center mt-3">
+                <img src="{{ site.baseurl }}{{ page.capa }}" alt="{{ page.title }}" class="page-capa mb-4" />
+                <h1 class="h3">{{ page.titulo }}</h1>
+                <h2 class="h5">{{ page.artista }}</h2>
+                <p>{{ page.ano }}</p>
             </div>
             <div class="col-md-8">
                 <div id="playlist" class="faixas">
-                    {% for faixa in album.faixas %}
-                    <div class="d-flex">
-                        <div><i class="icon-player"></i></div>
-                        <div>{{ faixa.num }}</div>
-                        <div class="flex-grow-1"><h5 class="h6">{{ faixa.nome }}</h5></div>
-                        <div>{{ faixa.tempo }}</div>
-                    </div>
+                    {% for faixa in page.faixas %}
+                        {% if faixa.subfaixas != null %}
+                            <h5 class="h6 mt-3 mb-2">{{ faixa.nome }}</h5>
+                            {% for subfaixa in faixa.subfaixas %}
+                                <div class="d-flex p-2">
+                                    <div class="text-center d-none" style="width: 2rem">
+                                        {% if subfaixa.url != null %}
+                                            <a href="#" role="button">
+                                                <i class="fa fa-play icon-player"></i>
+                                            </a>
+                                        {% endif %}
+                                    </div>
+                                    <div class="mx-3">{{ subfaixa.num }}</div>
+                                    <div class="flex-grow-1 mr-3">
+                                        {{ subfaixa.nome }}
+                                    </div>
+                                    <div class="ml-auto">{{ subfaixa.tempo }}</div>
+                                </div>
+                            {% endfor %}
+                        {% else %}
+                            <div class="d-flex p-2">
+                                <div class="text-center d-none" style="width: 2rem">
+                                    {% if faixa.url != null %}
+                                        <a href="#" role="button"><i class="fa fa-play icon-player"></i></a>
+                                    {% endif %}
+                                </div>
+                                <div class="mx-3">{{ faixa.num }}</div>
+                                <div class="flex-grow-1 mr-3">
+                                    {{ faixa.nome }}
+                                </div>
+                                <div class="ml-auto">{{ faixa.tempo }}</div>
+                            </div>
+                        {% endif %}
                     {% endfor %}
                 </div>
             </div>

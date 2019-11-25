@@ -1,4 +1,4 @@
-<ul class="navbar-nav w-100">
+<ul class="navbar-nav justify-content-md-around align-items-md-center w-100">
     {% for item in site.data.navigation %}
         {% if item.subcategories != null %}
         <li {% if page.url == item.href %}class="nav-item dropdown active"{% else %}class="nav-item dropdown"{% endif %}>
@@ -11,13 +11,16 @@
         </li>
         {% elsif item.title == "navbar-brand" %}
         <li class="nav-item navbar-brand">
-            <a class="nav-link pt-0" href="{{ site.baseurl }}">
+            <a class="nav-link pt-0" href="{{ site.baseurl }}{{ item.href }}">
                 <img src="{{ site.baseurl }}{{item.img}}" alt="{{ item.alt }}">
+                <span class="sr-only">(current)</span>
             </a>
         </li>
         {% else %}
         <li {% if page.url == item.href %}class="nav-item active"{% else %}class="nav-item"{% endif %}>
-            <a class="nav-link" href="{{ site.baseurl }}{{ item.href }}">{{ item.title }} <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="{{ site.baseurl }}{{ item.href }}">
+                {{ item.title }}
+            </a>
         </li>
         {% endif %}
     {% endfor %}
