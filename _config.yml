@@ -18,8 +18,11 @@ collections:
       output: true
       permalink: /album/:name
       order:
-        - oitis.md
         - barbieri-schneiter-solo.md
+        - duo-barbieri-schneiter-interpreta.md
+        - duo-barbieri-schneiter-10-anos.md
+        - duo-barbieri-no-caraca.md
+        - oitis.md
     biografias:
       output: true
       permalink: /:name
