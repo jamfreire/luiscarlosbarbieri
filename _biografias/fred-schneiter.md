@@ -11,7 +11,7 @@ Participou de diversas formações cameristicas atuando como solista, em duos de
 
 Despertou muito rapidamente sua vocação para a composição que é dedicada principalmente para o violão. Também compôs uma peça para coral e outra para clarone, flauta, violino e violoncelo que são as únicas que não incluem o violão.
 
-![Fred Schneiter](/assets/images/fred-schneiter.jpg "Fred Schneiter"){: .img-fluid .my-3 max-width: 500}
+![Fred Schneiter]({{ site.baseurl }}/assets/images/fred-schneiter.jpg "Fred Schneiter"){: .img-fluid .my-3 max-width: 500}
 *Fred Schneiter*{: .d-block .small }
 {: .text-center }
 

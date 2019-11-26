@@ -10,8 +10,8 @@
             </div>
         </li>
         {% elsif item.title == "navbar-brand" %}
-        <li class="nav-item navbar-brand">
-            <a class="nav-link pt-0" href="{{ site.baseurl }}{{ item.href }}">
+        <li class="nav-item navbar-brand mx-0">
+            <a class="nav-link" href="{{ site.baseurl }}{{ item.href }}">
                 <img src="{{ site.baseurl }}{{item.img}}" alt="{{ item.alt }}">
                 <span class="sr-only">(current)</span>
             </a>

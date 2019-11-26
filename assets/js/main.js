@@ -6,10 +6,10 @@ $(function(){
 	});
 	
 	var navbarCollapse = function () {
-		if ($("#mainNav").offset().top > 150) {
-			$("#mainNav").addClass("navbar-shrink");
+		if ($(".navbar-main").offset().top > 150) {
+			$(".navbar-main").addClass("navbar-shrink");
 		} else {
-			$("#mainNav").removeClass("navbar-shrink");
+			$(".navbar-main").removeClass("navbar-shrink");
 		}
 	};
 	navbarCollapse();
