@@ -17,11 +17,16 @@ layout: default
                             <h5 class="h6 mt-3 mb-2">{{ faixa.nome }}</h5>
                             {% for subfaixa in faixa.subfaixas %}
                                 <div class="d-flex p-2">
-                                    <div class="text-center d-none" style="width: 2rem">
+                                    <div class="text-center" style="width: 2rem">
                                         {% if subfaixa.url != null %}
-                                            <a href="#" role="button">
-                                                <i class="fa fa-play icon-player"></i>
+                                            <a role="button" href="#faixa{{ subfaixa.num }}" data-toggle="player" data-target="#faixa{{ subfaixa.num }}"> 
+                                                <span class="icon icon-play"></span>
+                                                <span class="sr-only">Play/Pause</span>
                                             </a>
+                                            <!--<audio preload="none" id="faixa{{ subfaixa.num }}" class="audio-player">
+                                                <source src="{{ site.baseurl }}{{ subfaixa.url }}" type="audio/mpeg"></source>
+                                            </audio>-->
+                                            <audio preload="none" type="audio/mpeg" controls controlsList="nodownload" class="audio-player" id="faixa{{ subfaixa.num }}" src="{{ site.baseurl }}{{ subfaixa.url }}"></audio>
                                         {% endif %}
                                     </div>
                                     <div class="mx-3">{{ subfaixa.num }}</div>
@@ -32,7 +37,7 @@ layout: default
                                 </div>
                             {% endfor %}
                         {% else %}
-                            <div class="d-flex p-2">
+                            <!--<div class="d-flex p-2">
                                 <div class="text-center d-none" style="width: 2rem">
                                     {% if faixa.url != null %}
                                         <a href="#" role="button"><i class="fa fa-play icon-player"></i></a>
@@ -43,7 +48,7 @@ layout: default
                                     {{ faixa.nome }}
                                 </div>
                                 <div class="ml-auto">{{ faixa.tempo }}</div>
-                            </div>
+                            </div>-->
                         {% endif %}
                     {% endfor %}
                 </div>

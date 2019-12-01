@@ -1,5 +1,26 @@
+function toggleAudio(el) {
+    var player = $(el.data('target'));
+    $('.icon').removeClass('icon-pause').addClass('icon-play');
+    if (!player[0].paused) {
+        player[0].pause();
+    } else {
+        $('audio').each(function() {
+        this.pause();
+        });
+        player[0].play();
+        el.find('.icon').removeClass('icon-play').addClass('icon-pause');
+    }
+}
 
 $(function() {
+    $('[data-toggle="player"]').on('click', function(e) {
+        e.preventDefault();
+        toggleAudio($(this));
+    });
+});
+
+
+/*$(function() {
 
     function playToggle(player) {
         if (!(player[0].paused || player[0].muted)) {
@@ -25,4 +46,4 @@ $(function() {
     });
 
    
-});
+});*/

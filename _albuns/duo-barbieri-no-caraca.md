@@ -5,7 +5,7 @@ title: Duo Barbieri-Schneiter No Caraça
 titulo: Duo Barbieri-Schneiter No Caraça
 artista: Duo Barbieri-Schneiter
 ano: 1996
-capa: /assets/images/albuns/duo-barbieri-no-caraca.jpg
+capa: /assets/albuns/duo-barbieri-no-caraca/duo-barbieri-no-caraca.jpg
 faixas:
 - nome: "JOÃO PERNAMBUCO"
   subfaixas:
@@ -35,6 +35,7 @@ faixas:
   - nome: "Conversa de Baiano"
     num: "08 "
     tempo: "4’16”"
+    url: /assets/albuns/duo-barbieri-no-caraca/08-conversa-de-baiano.mp3
 - nome: "FRED SCHNEITER – Suíte Nº 1"
   subfaixas:
   - nome: "Lúdico"

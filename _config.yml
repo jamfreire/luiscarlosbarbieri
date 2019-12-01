@@ -4,14 +4,15 @@ email:
 description: "Site oficial do violonista e compositor Luis Carlos Barbieri"
 baseurl: "/luiscarlosbarbieri"
 url: "https://jamfreire.github.io/luiscarlosbarbieri"
-repo: http://github.com/jamfreire/luiscarlosbarbieri
+repo: "http://github.com/jamfreire/luiscarlosbarbieri"
 comments: false
-author:
-  name: "Jam Freire"
+author: "Jam Freire"
 
 # Build settings
 markdown: kramdown
 permalink: /:title
+exclude:
+  - .jekyll-cache
 
 collections:
     albuns:

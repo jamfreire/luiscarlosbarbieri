@@ -5,7 +5,7 @@ title: Duo Barbieri-Schneiter 10 Anos
 titulo: Duo Barbieri-Schneiter 10 Anos
 artista: Duo Barbieri-Schneiter
 ano: 1997
-capa: /assets/images/albuns/duo-barbieri-schneiter-10-anos.jpg
+capa: /assets/albuns/duo-barbieri-schneiter-10-anos/duo-barbieri-schneiter-10-anos.jpg
 faixas:
 - nome: "ANTONIO VIVALDI – Concerto em Ré Maior"
   subfaixas:
@@ -34,6 +34,7 @@ faixas:
   - nome: "Interiores"
     num: "07 "
     tempo: "2:37"
+    url: /assets/albuns/duo-barbieri-schneiter-10-anos/07-interiores.mp3
   - nome: "Luz"
     num: "08"
     tempo: "2:05"

@@ -35,20 +35,24 @@
                     aria-labelledby="album-tab{{ forloop.index }}">
                     <div class="row">
                         <div class="col-12 col-md-4 text-center mb-3">
-                            <img src="{{ site.baseurl }}/{{album.capa}} shadow-sm" class="img-fluid" />
+                            <a href="{{ site.baseurl }}{{ album.url }}">
+                                <img src="{{ site.baseurl }}/{{album.capa}}" class="img-fluid shadow-sm" />
+                            </a>
                         </div>
                         <div class="col-12 col-md-8">
-                            <h3>{{ album.titulo }}</h3>
-                            <h4>{{ album.artista }}</h4>
+                            <h3 class="h4">{{ album.titulo }}</h3>
+                            <h4 class="h5">{{ album.artista }}</h4>
                             <p class="text-muted">{{ album.ano }}</p>
                             {% for faixa in album.faixas %}
-                                {% if faixa.url != null}
-                                    <div class="my-4">
-                                        <h5>{{ faixa.titulo }}</h5>
-                                        <audio controls controlsList="nodownload" id="faixa{{ faixa.num }}" src="{{ faixa.url }}" preload="none"></audio>
+                                {% for subfaixa in faixa.subfaixas %}
+                                {% if subfaixa.url != null %}
+                                    <div class="my-3">
+                                        <h5 class="h6">{{ faixa.nome }} - {{ subfaixa.nome }}</h5>
+                                        <audio preload="none" type="audio/mpeg" controls controlsList="nodownload" class="audio-player" id="faixa{{ subfaixa.num }}" src="{{ site.baseurl }}{{ subfaixa.url }}"></audio>
                                     </div>
                                     {% break %}
                                 {% endif %}
+                                {% endfor %}
                             {% endfor %}
                             <a href="{{ site.baseurl }}{{ album.url }}" class="btn btn-primary my-1">Ver álbum
                                 completo</a>

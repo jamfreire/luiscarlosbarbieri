@@ -5,7 +5,7 @@ title: Barbieri & Schneiter Solo
 titulo: Barbieri & Schneiter Solo
 artista: Luis Carlos Barbieri
 ano: 2002
-capa: /assets/images/albuns/barbieri-schneiter-solo.jpg
+capa: /assets/albuns/barbieri-schneiter-solo/barbieri-schneiter-solo.jpg
 faixas:
 - nome: "FRED SCHNEITER – Suíte Baiana Nº 1"
   subfaixas:
@@ -26,6 +26,7 @@ faixas:
   - nome: "Dança"
     num: "05 "
     tempo: "1:46"
+    url: /assets/albuns/barbieri-schneiter-solo/05-danca.mp3
 - nome: "FRED SCHNEITER – Álbum de Família"
   subfaixas:
   - nome: "Pituba"

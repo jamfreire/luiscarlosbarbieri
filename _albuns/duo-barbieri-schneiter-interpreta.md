@@ -5,13 +5,14 @@ title: Duo Barbieri-Schneiter interpreta Barbieri & Schneiter
 titulo: Duo Barbieri-Schneiter interpreta Barbieri & Schneiter
 artista: Duo Barbieri-Schneiter
 ano: 2000
-capa: /assets/images/albuns/duo-barbieri-schneiter-interpreta.jpg
+capa: /assets/albuns/duo-barbieri-schneiter-interpreta/duo-barbieri-schneiter-interpreta.jpg
 faixas:
 - nome: "SUITE CARAÇA (L. C. Barbieri)"
   subfaixas:
   - nome: "Mirante do Calvário"
     num: "01 "
     tempo: "3:39"
+    url: /assets/albuns/duo-barbieri-schneiter-interpreta/01-mirante-do-calvario.mp3
   - nome: "Guará"
     num: "02"
     tempo: "2:57"
