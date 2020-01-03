@@ -15,10 +15,14 @@ body {
   padding-top: 52px;
 }
 
-p {
-  font-size: 1.25rem;
-  color: #495057;
+.biografia {
+  p {
+    font-size: 1.15rem;
+    color: #495057;
+  }
 }
+
+
 
 section {
 	padding-top:30px;
@@ -61,29 +65,14 @@ footer .nav-head {
   padding: 4px !important;
 }
 
-.navbar-main .navbar-nav {
-  /*display: flex;
-  width: 100%;*/
-}
-
 .navbar-main {
   .navbar-brand {
     display: none;
-    /*margin: 0 !important;*/
     img {
       height: 35px;
     }
   }
 }
-
-.nav-link {
-  /*line-height: 1.25em;
-  align-items: stretch;*/
-}
-
-/*.nav-link .fa {
-  font-size: 1.75em;
-}*/
 
 .icon-play::before {
   display: inline-block; 
@@ -103,6 +92,12 @@ footer .nav-head {
   background-size: auto;
   width: 1em;
   height: 1em;
+}
+
+.scale-up {
+  &:hover {
+    transform: scale(1.01);
+  }
 }
 
 @media (min-width: 768px) {

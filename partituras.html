@@ -8,7 +8,7 @@ title: Partituras
         <form id="buscaPartitura" class="form-inline align-items-center mb-4">
             <div class="form-group">
                 <ul id="filtros" class="nav nav-pills" role="tablist">
-                    <a class="nav-link active" href="#all">Tudo</a>
+                    <a class="nav-link active" href="#all">Todos</a>
                     <a class="nav-link" href="#barbieri">Barbieri</a>
                     <a class="nav-link" href="#fred">Fred Schneiter</a>
                 </ul>
@@ -35,8 +35,8 @@ title: Partituras
                         <th>Título</th>
                         <th>Compositor</th>
                         <th>Ano</th>
-                        <th>Formação</th>
                         <th>Edit/Manu</th>
+                        <th>Formação</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -44,16 +44,16 @@ title: Partituras
                     {% for item in site.data.partituras %}
                     <tr>
                         <th scope="row">
-                            <a href="{{ item.link }}">
+                            <a href="{{ item.link }}" download>
                                 {{ item.titulo }}
                             </a>
                         </th>
                         <td>{{ item.compositor }}</td>
                         <td>{{ item.ano }}</td>
-                        <td>{{ item.formacao }}</td>
                         <td>{{ item.tipo }}</td>
+                        <td>{{ item.formacao }}</td>
                         <td>
-                            <a class="text-nowrap" href="{{ item.link }}">
+                            <a class="text-nowrap" href="{{ item.link }}" download>
                                 <i class="fa fas fa-download"></i> <span class="d-none d-sm-inline">Baixar</span>
                             </a>
                         </td>

@@ -4,7 +4,8 @@ title: Fotos
 ---
 <section class="fotos">
     <div class="container p-3 p-lg-5">
-        <div class="bd-example">
+        <h1 class="text-center mb-3 mb-lg-5">{{ page.title }}</h1>
+        <!--<div class="bd-example">
           <div id="carouselFotos" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 {% for foto in site.data.fotos %}
@@ -31,6 +32,23 @@ title: Fotos
               <span class="sr-only">Próximo</span>
             </a>
           </div>
+        </div>-->
+        <div class="card-columns">
+            {% for foto in site.data.fotos %}
+            <div class="card border-0 mb-3">
+              <figure>
+                  <img src="{{ site.baseurl }}{{ foto.url }}" class="figure-img img-fluid" alt="{{ foto.titulo }}">
+                <figcaption>
+                  <h4 class="h5 mb-0">{{ foto.titulo }}</h4>
+                  {% if foto.autoria %}
+                  <p class="text-muted">
+                    Foto: {{ foto.autoria }} {% if foto.ano %}({{ foto.ano }}){% endif %}
+                  </p>
+                  {% endif %}
+                  </figcaption>
+              </figure>
+            </div>
+            {% endfor %}
         </div>
     </div>
 </section>

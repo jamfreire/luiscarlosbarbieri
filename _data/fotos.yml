@@ -1,83 +1,65 @@
 - titulo: Luis Carlos Barbieri
   legenda: 
+  ano: 2015
+  autoria: Alberto Lopes
+  url: "/assets/fotos/barbieri_tiradentes_2015_alberto_lopes.jpg"
+
+- titulo: Luis Carlos Barbieri
+  legenda: 
   ano: 2009
   autoria: Letícia Vinhas
-  url: "/assets/fotos"
-  
+  url: "/assets/fotos/barbieri_foto_2009_leticia_vinhas.jpg"
+
 - titulo: Luis Carlos Barbieri
   legenda: 
   ano: 
   autoria: Alberto Lopes
-  url: "/assets/fotos"
+  url: "/assets/fotos/cropped-lcbarbieri-foto-alberto-lopes.jpg"   
   
-- titulo: Luís Carlos Barbieri
+- titulo: Luís Carlos Barbieri 
   legenda: 
   ano: 
   autoria: Márcia Mello
-  url: "/assets/fotos"  
+  url: "/assets/fotos/barbieri_marcia_mello_1.jpg"  
 
-- titulo: Luis Carlos Barbieri
+- titulo: Fred Schneiter
   legenda: 
   ano: 
-  autoria: Márcia Mello
-  url: "/assets/fotos"  
+  autoria: 
+  url: "/assets/fotos/Schneiter_perfil.jpg" 
 
 - titulo: Duo Barbieri-Schneiter
   legenda: 
   ano: 
-  autoria: Silvana Marques
-  url: "/assets/fotos"  
+  autoria: 
+  url: "/assets/fotos/Duo_e_Birita.jpg"  
 
 - titulo: Duo Barbieri-Schneiter
   legenda: 
   ano: 
   autoria: Mário Cravo Neto
-  url: "/assets/fotos"  
+  url: "/assets/fotos/DUO_Mario_Cravo_Neto.jpg"  
 
 - titulo: Duo Barbieri-Schneiter
   legenda: 
   ano: 1994
   autoria: Filó
-  url: "/assets/fotos"  
+  url: "/assets/fotos/DUO_Filo_94.jpg"  
 
 - titulo: Duo Barbieri-Schneiter
   legenda: 
   ano: 
   autoria: Silvana Marques
-  url: "/assets/fotos"  
+  url: "/assets/fotos/DUO_Silvana_Marques.jpg"  
 
 - titulo: Fred Schneiter, Luis Carlos Barbieri
   legenda: 
   ano: 
   autoria: Joana Cesko
-  url: "/assets/fotos"  
+  url: "/assets/fotos/Barbieri_Joana_Cesko_1.jpg"  
 
 - titulo: Luis Carlos Barbieri
   legenda: 
   ano: 
   autoria: Joana Cesko
-  url: "/assets/fotos"  
-
-- titulo: Luis Carlos Barbieri
-  legenda: 
-  ano: 
-  autoria: Joana Cesko
-  url: "/assets/fotos"  
-  
-- titulo: Luis Carlos Barbieri
-  legenda: 
-  ano: 
-  autoria: Joana Cesko
-  url: "/assets/fotos"  
-  
-- titulo: Luis Carlos Barbieri
-  legenda: 
-  ano: 
-  autoria: Alberto Lopes
-  url: "/assets/fotos"   
-  
-- titulo: Fred Schneiter
-  legenda: 
-  ano: 
-  autoria: 
-  url: "/assets/fotos/fred-schneiter.jpg"
+  url: "/assets/fotos/Barbieri_Joana_Cesko_2.jpg"  
