@@ -2,9 +2,9 @@
 layout: default
 title: Albuns
 ---
-<div class="container py-3 py-lg-5">
-    <section id="albuns">
-            <h1 class="text-center mb-4 mb-lg-5">Álbuns</h1>
+<div class="container">
+    <section class="section albuns">
+            <h1 class="page-title">Álbuns</h1>
             <div class="list-unstyled lista-albuns row justify-content-center">
                 {% for album in site.albuns %}
                 <div class="col-lg px-2 text-center text-md-left mb-4" style="max-width: 15rem">
@@ -17,7 +17,7 @@ title: Albuns
             </div>
     </section>
 
-    <section id="participacoes">
+    <section class="participacoes">
         <h2 class="mb-4 mb-md-5 text-center">Participações</h2>
         <div class="row">
             {% for album in site.data.participacoes %}

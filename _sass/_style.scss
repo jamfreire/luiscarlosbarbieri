@@ -22,10 +22,20 @@ body {
   }
 }
 
+.line-section {
+  background-color: theme-color("primary");
+  width: 2.5rem;
+  height: .125rem;
+  margin-bottom: 3rem;
+}
 
+.page-title {
+  text-align: center;
+  margin-bottom: 2.25rem;
+}
 
-section {
-	padding-top:30px;
+.section {
+  padding-top: 3rem;
 }
 
 footer .nav-head {
@@ -104,6 +114,11 @@ footer .nav-head {
   body {
     padding-top: 68px;
   }
+
+  .section {
+    padding-top: 4rem;
+  }
+
   .navbar-main {
     min-height: 68px;
     .navbar-brand {

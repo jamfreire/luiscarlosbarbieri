@@ -2,9 +2,9 @@
 layout: default
 title: Fotos
 ---
-<section class="fotos">
-    <div class="container p-3 p-lg-5">
-        <h1 class="text-center mb-3 mb-lg-5">{{ page.title }}</h1>
+<section class="section fotos">
+    <div class="container">
+        <h1 class="page-title">{{ page.title }}</h1>
         <!--<div class="bd-example">
           <div id="carouselFotos" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -37,7 +37,7 @@ title: Fotos
             {% for foto in site.data.fotos %}
             <div class="card border-0 mb-3">
               <figure>
-                  <img src="{{ site.baseurl }}{{ foto.url }}" class="figure-img img-fluid" alt="{{ foto.titulo }}">
+                  <img src="{{ site.baseurl }}/assets/{{ foto.url }}" class="figure-img img-fluid" alt="{{ foto.titulo }}">
                 <figcaption>
                   <h4 class="h5 mb-0">{{ foto.titulo }}</h4>
                   {% if foto.autoria %}
