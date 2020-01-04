@@ -40,11 +40,9 @@ title: Fotos
                   <img src="{{ site.baseurl }}/assets/{{ foto.url }}" class="figure-img img-fluid" alt="{{ foto.titulo }}">
                 <figcaption>
                   <h4 class="h5 mb-0">{{ foto.titulo }}</h4>
-                  {% if foto.autoria %}
                   <p class="text-muted">
-                    Foto: {{ foto.autoria }} {% if foto.ano %}({{ foto.ano }}){% endif %}
+                      {% if foto.autoria %}Foto: {{ foto.autoria }}{% endif %} {% if foto.ano %}({{ foto.ano }}){% endif %}
                   </p>
-                  {% endif %}
                   </figcaption>
               </figure>
             </div>

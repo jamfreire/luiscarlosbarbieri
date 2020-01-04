@@ -6,39 +6,45 @@
 
 - titulo: Luis Carlos Barbieri
   legenda: 
+  ano: 2015
+  autoria: Alberto Lopes
+  url: "fotos/cropped-lcbarbieri-foto-alberto-lopes.jpg"   
+
+- titulo: Luis Carlos Barbieri
+  legenda: 
   ano: 2009
   autoria: Letícia Vinhas
   url: "fotos/barbieri_foto_2009_leticia_vinhas.jpg"
 
-- titulo: Luis Carlos Barbieri
-  legenda: 
-  ano: 
-  autoria: Alberto Lopes
-  url: "fotos/cropped-lcbarbieri-foto-alberto-lopes.jpg" 
-  
 - titulo: Duo Barbieri-Schneiter
   legenda: 
   ano: 
   autoria: Silvana Marques
-  url: "fotos/DUO_Silvana_Marques.jpg"    
+  url: "fotos/DUO_Silvana_Marques.jpg" 
+  
+- titulo: Luís Carlos Barbieri 
+  legenda: 
+  ano: 
+  autoria: Márcia Mello
+  url: "fotos/barbieri_marcia_mello_2.jpg"     
 
 - titulo: Luís Carlos Barbieri 
   legenda: 
   ano: 
   autoria: Márcia Mello
-  url: "fotos/barbieri_marcia_mello_1.jpg" 
+  url: "fotos/barbieri_marcia_mello_1.jpg"  
 
 - titulo: Fred Schneiter
   legenda: 
   ano: 
   autoria: 
-  url: "fotos/Schneiter_perfil.jpg"    
-
+  url: "fotos/Schneiter_perfil.jpg" 
+  
 - titulo: Duo Barbieri-Schneiter
   legenda: 
   ano: 
-  autoria: 
-  url: "fotos/Duo_e_Birita.jpg"  
+  autoria: Silvana Marques
+  url: "fotos/DUO_Silvana.jpg"   
 
 - titulo: Duo Barbieri-Schneiter
   legenda: 
@@ -63,3 +69,17 @@
   ano: 
   autoria: Joana Cesko
   url: "fotos/Barbieri_Joana_Cesko_2.jpg"  
+
+
+- titulo: Luis Carlos Barbieri e Camerata
+  legenda: 
+  ano: 2012
+  autoria: 
+  url: "fotos/barbieri_e_camerata_CBM_JF_21_jul_2012.jpg"    
+
+
+- titulo: Duo Barbieri-Schneiter e Álvaro Birita
+  legenda: 
+  ano: 
+  autoria: 
+  url: "fotos/Duo_e_Birita.jpg"    
