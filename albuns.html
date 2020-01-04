@@ -7,7 +7,7 @@ title: Albuns
             <h1 class="page-title">Álbuns</h1>
             <div class="list-unstyled lista-albuns row justify-content-center">
                 {% for album in site.albuns %}
-                <div class="col-lg px-2 text-center text-md-left mb-4" style="max-width: 15rem">
+                <div class="col-lg px-2 text-center text-md-left mb-4 mb-md-3" style="max-width: 15rem">
                     <a href="{{ site.baseurl }}{{ album.url }}" class="text-reset text-decoration-none">
                         <img class="img-fluid mb-2 shadow-sm" src="{{ site.baseurl }}{{ album.capa }}" alt="Capa do álbum">
                         <h4 class="h6">{{ album.titulo }}</h4>
@@ -17,8 +17,8 @@ title: Albuns
             </div>
     </section>
 
-    <section class="participacoes">
-        <h2 class="mb-4 mb-md-5 text-center">Participações</h2>
+    <section class="section participacoes">
+        <h2 class="page-title">Participações</h2>
         <div class="row">
             {% for album in site.data.participacoes %}
             <div class="col-12 col-md-6 mb-4 mb-lg-5">

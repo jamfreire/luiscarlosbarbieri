@@ -14,19 +14,25 @@
   legenda: 
   ano: 
   autoria: Alberto Lopes
-  url: "fotos/cropped-lcbarbieri-foto-alberto-lopes.jpg"   
+  url: "fotos/cropped-lcbarbieri-foto-alberto-lopes.jpg" 
   
+- titulo: Duo Barbieri-Schneiter
+  legenda: 
+  ano: 
+  autoria: Silvana Marques
+  url: "fotos/DUO_Silvana_Marques.jpg"    
+
 - titulo: Luís Carlos Barbieri 
   legenda: 
   ano: 
   autoria: Márcia Mello
-  url: "fotos/barbieri_marcia_mello_1.jpg"  
+  url: "fotos/barbieri_marcia_mello_1.jpg" 
 
 - titulo: Fred Schneiter
   legenda: 
   ano: 
   autoria: 
-  url: "fotos/Schneiter_perfil.jpg" 
+  url: "fotos/Schneiter_perfil.jpg"    
 
 - titulo: Duo Barbieri-Schneiter
   legenda: 
@@ -44,13 +50,7 @@
   legenda: 
   ano: 1994
   autoria: Filó
-  url: "fotos/DUO_Filo_94.jpg"  
-
-- titulo: Duo Barbieri-Schneiter
-  legenda: 
-  ano: 
-  autoria: Silvana Marques
-  url: "fotos/DUO_Silvana_Marques.jpg"  
+  url: "fotos/DUO_Filo_94.jpg"
 
 - titulo: Fred Schneiter, Luis Carlos Barbieri
   legenda: 

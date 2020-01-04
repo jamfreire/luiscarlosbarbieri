@@ -8,7 +8,7 @@ Duo gravou 3 CDs no Santuário Ecológico do Caraça (MG). Está previsto o lan�
 concertos ao vivo, entre 1988 e 1993, na Sala Cecília Meireles, Auditório Guiomar Novaes e Teatro da Aliança Francesa/
 RJ. A carreira do Duo foi interrompida com a morte prematura de [Fred Schneiter](/fred-schneiter), em 2001.
 
-![Luis Carlos Barbieri]({{ site.baseurl }}/assets/images/luis-carlos-barbieri.jpg){: .img-fluid .my-3 max-width: 500}
+![Luis Carlos Barbieri]({{ site.baseurl }}/assets/images/luis-carlos-barbieri.jpg){: .img-fluid .my-3 max-width: 480}
 *Luis Carlos Barbieri - 2015. Foto: Alberto Lopes*{: .d-block .small }
 {: .text-center }
 
