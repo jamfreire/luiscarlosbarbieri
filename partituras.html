@@ -44,7 +44,7 @@ title: Partituras
                     {% for item in site.data.partituras %}
                     <tr>
                         <th scope="row">
-                            <a href="{{ item.link }}">
+                            <a href="{{ item.link }}" download>
                                 {{ item.titulo }}
                             </a>
                         </th>
@@ -53,7 +53,7 @@ title: Partituras
                         <td>{{ item.tipo }}</td>
                         <td>{{ item.formacao }}</td>
                         <td>
-                            <a class="text-nowrap" href="{{ item.link }}">
+                            <a class="text-nowrap" href="{{ item.link }}" download>
                                 <i class="fa fas fa-download"></i> <span class="d-none d-sm-inline">Baixar</span>
                             </a>
                         </td>
