@@ -32,9 +32,9 @@ faixas:
 - nome: "LUIS CARLOS BARBIERI – Interiores, Luz e Bel"
   subfaixas:
   - nome: "Interiores"
-    num: "07 "
+    num: "07"
     tempo: "2:37"
-    url: /assets/albuns/duo-barbieri-schneiter-10-anos/07-interiores.mp3
+    url: '/assets/albuns/duo-barbieri-schneiter-10-anos/07-interiores.mp3'
   - nome: "Luz"
     num: "08"
     tempo: "2:05"

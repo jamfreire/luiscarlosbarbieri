@@ -18,25 +18,34 @@ layout: default
                             <h5 class="h6 font-weight-bold my-2 text-uppercase">{{ faixa.nome }}</h5>
                             {% endif %}
                             {% for subfaixa in faixa.subfaixas %}
-                                <div class="d-flex p-2">
-                                    <!--<div class="text-center">
-                                        {% if subfaixa.url != null %}
-                                            <a role="button" href="#faixa{{ subfaixa.num }}" data-toggle="player" data-target="#faixa{{ subfaixa.num }}"> 
-                                                <span class="icon icon-play"></span>
-                                                <span class="sr-only">Play/Pause</span>
-                                            </a>
-                                            <audio preload="none" id="faixa{{ subfaixa.num }}" class="audio-player">
-                                                <source src="{{ site.baseurl }}{{ subfaixa.url }}" type="audio/mpeg"></source>
-                                            </audio>
-                                            <audio preload="none" type="audio/mpeg" controls controlsList="nodownload" class="audio-player" id="faixa{{ subfaixa.num }}" src="{{ site.baseurl }}{{ subfaixa.url }}"></audio>
-                                        {% endif %}
-                                    </div>-->
-                                    <div class="mx-3">{{ subfaixa.num }}</div>
-                                    <div class="flex-grow-1 mr-3">
-                                        {{ subfaixa.nome }}
-                                    </div>
-                                    <div class="ml-auto">{{ subfaixa.tempo }}</div>
+                            <div class="subfaixa d-flex py-2">
+                                {% if subfaixa.url != null %}
+                                <div>
+                                    <a role="button" href="#faixa{{subfaixa.num}}" data-toggle="play" data-target="#faixa{{subfaixa.num}}">
+                                        <span class="icon icon-play"></span>
+                                        <span class="sr-only">Play/Pause</span>
+                                    </a>
                                 </div>
+                                <div  class="mx-2">
+                                    <a class="text-decoration-none" role="button" href="#faixa{{ subfaixa.num }}" data-toggle="play" data-target="#faixa{{ subfaixa.num }}">
+                                        {{ subfaixa.num }}
+                                    </a>
+                                </div>
+                                <div class="flex-grow-1 mr-3">
+                                    <a class="text-decoration-none" role="button" href="#faixa{{ subfaixa.num }}" data-toggle="play" data-target="#faixa{{ subfaixa.num }}">
+                                        {{ subfaixa.nome }}
+                                    </a>
+                                </div>
+                                <div class="ml-auto">{{ subfaixa.tempo }}</div>
+                                <audio type="audio/mpeg" class="audio-player" id="faixa{{subfaixa.num}}" src="{{ site.baseurl }}{{ subfaixa.url }}"></audio>
+                                {% else %}
+                                <div class="ml-4 mr-2">{{ subfaixa.num }}</div>
+                                <div class="flex-grow-1 mr-3">
+                                    {{ subfaixa.nome }}
+                                </div>
+                                <div class="ml-auto">{{ subfaixa.tempo }}</div>
+                                {% endif %}
+                            </div>
                             {% endfor %}
                             <div class="py-2"></div>
                         {% endif %}

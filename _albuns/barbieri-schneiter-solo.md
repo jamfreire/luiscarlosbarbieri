@@ -24,7 +24,7 @@ faixas:
     num: "04"
     tempo: "2:15"
   - nome: "Dança"
-    num: "05 "
+    num: "05"
     tempo: "1:46"
     url: /assets/albuns/barbieri-schneiter-solo/05-danca.mp3
 - nome: "FRED SCHNEITER – Álbum de Família"

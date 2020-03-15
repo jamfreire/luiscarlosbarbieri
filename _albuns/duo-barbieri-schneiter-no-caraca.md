@@ -33,7 +33,7 @@ faixas:
     num: "07"
     tempo: "3’36”"
   - nome: "Conversa de Baiano"
-    num: "08 "
+    num: "08"
     tempo: "4’16”"
     url: /assets/albuns/duo-barbieri-schneiter-no-caraca/08-conversa-de-baiano.mp3
 - nome: "FRED SCHNEITER – Suíte Nº 1"

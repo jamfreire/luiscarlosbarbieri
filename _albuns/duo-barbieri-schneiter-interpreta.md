@@ -10,7 +10,7 @@ faixas:
 - nome: "SUITE CARAÇA (L. C. Barbieri)"
   subfaixas:
   - nome: "Mirante do Calvário"
-    num: "01 "
+    num: "01"
     tempo: "3:39"
     url: /assets/albuns/duo-barbieri-schneiter-interpreta/01-mirante-do-calvario.mp3
   - nome: "Guará"
