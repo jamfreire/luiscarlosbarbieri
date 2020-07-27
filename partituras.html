@@ -41,10 +41,11 @@ title: Partituras
                     </tr>
                 </thead>
                 <tbody id="partituraTable">
-                    {% for item in site.data.partituras %}
+                    {% assign partituras = site.data.partituras | sort: "titulo" %}
+                    {% for item in partituras %}
                     <tr>
                         <th scope="row">
-                            <a href="assets/{{ item.link }}">
+                            <a href="assets/{{ item.link }}" target="_blank">
                                 {{ item.titulo }}
                             </a>
                         </th>

@@ -1,3 +1,24 @@
+- titulo: 3 Peças Para Violão Solo
+  compositor: Fred Schneiter
+  ano: 1985
+  formacao: Violão Solo
+  tipo: Editada
+  link: partituras/3-Pecas-para-violao-solo.pdf
+
+- titulo: Album de Família
+  compositor: Fred Schneiter
+  ano: 1996
+  formacao: Violão Solo
+  tipo: Editada
+  link: partituras/album-de-Família.pdf
+
+- titulo: Angela
+  compositor: Fred Schneiter
+  ano: 1985
+  formacao: Violão Solo
+  tipo: Editada
+  link: partituras/angela.pdf
+
 - titulo: Deve Ter Lua
   compositor: Fred Schneiter
   ano: 1985
@@ -33,33 +54,12 @@
   tipo: Editada
   link: partituras/se-voce.pdf
 
-- titulo: 3 Peças Para Violão Solo
-  compositor: Fred Schneiter
-  ano: 1985
-  formacao: Violão Solo
-  tipo: Editada
-  link: partituras/3-Pecas-para-violao-solo.pdf
-
 - titulo: Micro Estudos
   compositor: Fred Schneiter
   ano: 1990
   formacao: Violão Solo
   tipo: Editada
   link: partituras/Micro-Estudos.pdf
-
-- titulo: Ângela
-  compositor: Fred Schneiter
-  ano: 1985
-  formacao: Violão Solo
-  tipo: Editada
-  link: partituras/angela.pdf
-
-- titulo: Álbum de Família
-  compositor: Fred Schneiter
-  ano: 1996
-  formacao: Violão Solo
-  tipo: Editada
-  link: partituras/album-de-Família.pdf
 
 - titulo: 6 Estudos Oblíquos
   compositor: Fred Schneiter
