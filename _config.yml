@@ -19,6 +19,7 @@ collections:
       output: true
       permalink: /album/:name
       order:
+        - melodia-sentimental.md
         - barbieri-schneiter-solo.md
         - duo-barbieri-schneiter-interpreta.md
         - duo-barbieri-schneiter-10-anos.md
