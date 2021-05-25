@@ -1,5 +1,4 @@
 $(function(){
-	"use strict"
 
 	$('body').scrollspy({
 		target: '#mainNav',
