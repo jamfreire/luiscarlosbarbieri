@@ -7,19 +7,19 @@
     <div class="row justify-content-center">
         <div class="col-12 col-lg-2 px-lg-5 order-md-2">
             <ul class="nav nav-pills nav-albuns flex-nowrap flex-lg-wrap mb-3 mx-auto" id="pills-tab" role="tablist">
-                {% for album in site.albuns limit:4 %}
+                {% for album in site.albuns %}
                 {% if forloop.first == true %}
                     {% assign styleclass = ' active' %}
                 {% else %}
                     {% assign styleclass = '' %}
                 {% endif %}
-                <li class="nav-item">
-                    <a class="nav-link {{ styleclass }}" id="album-tab{{ forloop.index }}" data-toggle="pill"
-                        href="#album{{ forloop.index }}" role="tab" aria-controls="album{{ forloop.index }}"
-                        aria-selected="{{ forloop.first }}" title="{{ album.titulo }}">
-                        <img src="{{ site.baseurl }}{{ album.capa }}" class="img-fluid" />
-                    </a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ styleclass }}" id="album-tab{{ forloop.index }}" data-toggle="pill"
+                            href="#album{{ forloop.index }}" role="tab" aria-controls="album{{ forloop.index }}"
+                            aria-selected="{{ forloop.first }}" title="{{ album.titulo }}">
+                            <img src="{{ site.baseurl }}{{ album.capa }}" class="img-fluid" />
+                        </a>
+                    </li>
                 {% endfor %}
             </ul>
         </div>
