@@ -15,6 +15,10 @@ body {
   padding-top: 52px;
 }
 
+.page-content {
+  min-height: calc(100vh - 250px);
+}
+
 .biografia {
   p {
     font-size: 1.15rem;
@@ -160,6 +164,9 @@ footer .nav-head {
       padding-left: 75px;
     }
   }
+  .w-md-50 {
+    width: 75% !important;
+  }
 }
 
 @keyframes fadein {
@@ -170,4 +177,24 @@ footer .nav-head {
 @keyframes fadeout {
   from { opacity: 1; }
   to   { opacity: 0; }
+}
+
+@media (max-width: 575px) and (orientation: portrait) {
+  .albuns-container {
+      // margin: auto;
+
+      .lista-albuns {
+          max-width: 100%;
+          flex-wrap: nowrap;
+          overflow-x: auto;
+          margin: auto;
+
+          &:first-child {
+            padding-left: .75rem;
+          }
+          &:last-child {
+            padding-right: .75rem;
+          }
+      }
+  }
 }

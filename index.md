@@ -2,7 +2,5 @@
 title: Home
 layout: index
 ---
-**Luis Carlos Barbieri** ficou conhecido com seu trabalho no [Duo Barbieri-Schneiter](/duo-barbieri-schneiter), com o qual realizou, por 14 anos, concertos nas principais Salas do Brasil e de diversos outros países. Com o Duo gravou 3 CDs no Santuário Ecológico do Caraça (MG). A carreira do Duo foi interrompida com a morte prematura de [Fred Schneiter](/fred-schneiter), em 2001.
-
-Em 2002, Barbieri gravou o seu primeiro CD, [Barbieri & Schneiter solo](/album/barbieri-schneiter-solo), totalmente voltado para suas composições e as de Fred Schneiter. Participou como solista da trilha sonora do filme “O Outro lado da Rua”, de Marcos Bernstein (2004). [Ver mais...](/luis-carlos-barbieri)
+[Luis Carlos Barbieri](/luis-carlos-barbieri) nasceu no Rio de Janeiro em 1963. Estudou com Sérgio Assad de 1980 até 1985, em aulas particulares, e posteriormente fez seu Bacharelado em Violão na Escola de Música da UFRJ, nas classes de Turíbio Santos e Léo Soares. Nesta mesma instituição concluiu o Mestrado em Musicologia, em 2012, defendendo a dissertação “Catálogo Geral e Revisão Crítica da Obra para Violão Solo de Fred Schneiter”, sob a orientação da professora Dra. Márcia Taborda. [Ver mais...](/luis-carlos-barbieri)
 
