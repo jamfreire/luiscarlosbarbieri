@@ -16,7 +16,7 @@ body {
 }
 
 .page-content {
-  min-height: calc(100vh - 265px);
+  min-height: calc(100vh - 250px);
 }
 
 .biografia {
@@ -177,4 +177,24 @@ footer .nav-head {
 @keyframes fadeout {
   from { opacity: 1; }
   to   { opacity: 0; }
+}
+
+@media (max-width: 575px) and (orientation: portrait) {
+  .albuns-container {
+      // margin: auto;
+
+      .lista-albuns {
+          max-width: 100%;
+          flex-wrap: nowrap;
+          overflow-x: auto;
+          margin: auto;
+
+          &:first-child {
+            padding-left: .75rem;
+          }
+          &:last-child {
+            padding-right: .75rem;
+          }
+      }
+  }
 }
