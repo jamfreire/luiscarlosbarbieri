@@ -5,7 +5,8 @@
 </style>
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-    {% for album in site.albuns %}
+    {% assign albuns_ordered = site.albuns  | sort: 'ano'  %}
+    {% for album in albuns_ordered reversed %}
         {% if forloop.first == true %}
             {% assign styleclass = ' show active' %}
         {% else %}
