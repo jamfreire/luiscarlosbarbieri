@@ -2,38 +2,42 @@
 layout: default
 title: Albuns
 ---
-<div class="container px-lg-0">
+
     <section class="section albuns">
-            <h1 class="page-title">Álbuns</h1>
-            <div class="list-unstyled lista-albuns row justify-content-center">
-                {% assign albuns = site.albuns %}
-                {% for album in albuns %}
-                <div class="col-lg px-2 text-center text-md-left mb-4 mb-md-3" style="max-width: 15rem">
-                    <a href="{{ site.baseurl }}{{ album.url }}" class="text-reset text-decoration-none">
-                        <img class="img-fluid mb-2 shadow-sm" src="{{ site.baseurl }}{{ album.capa }}" alt="Capa do álbum">
-                        <h2 class="h6">{{ album.titulo }}</h2>
-                    </a>
+        <h1 class="page-title">Álbuns</h1>
+        <div class="container px-0">
+            <div class="albuns-container">
+                <div class="list-unstyled lista-albuns row justify-content-sm-center">
+                    {% assign albuns_ordered = site.albuns  | sort: 'ano'  %}
+                    {% for album in albuns_ordered reversed %}
+                    <div class="list-album-item col-auto px-2 text-center text-md-left mb-md-3" style="max-width: 200px">
+                        <a href="{{ site.baseurl }}{{ album.url }}" class="text-reset text-decoration-none" title="{{ album.titulo }}">
+                            <img class="img-fluid mb-2 shadow-sm" src="{{ site.baseurl }}{{ album.capa }}" alt="Capa do álbum">
+                            <h2 class="album-title h6 text-truncate font-weight-bold">{{ album.titulo }}</h2>
+                        </a>
+                    </div>
+                    {% endfor %}
                 </div>
-                {% endfor %}
             </div>
+        </div>
     </section>
 
     <section class="section participacoes">
-        <h2 class="page-title">Participações</h2>
-        <div class="row">
-            {% for album in site.data.participacoes %}
-            <div class="col-12 col-md-6 mb-4 mb-lg-5">
-                <div class="media">
-                    <img class="img-fluid mr-3 shadow" src="{{ site.baseurl }}{{ album.capa }}" alt="Capa do álbum {{ album.titulo }}">
-                    <div class="media-body">
-                        <h3 class="h5 font-weight-bold">{{ album.titulo }}</h3>
-                        <h4 class="h6">Obra: {{ album.obra }}</h4>
-                        <h5 class="h6">Composição: {{ album.composicao }}</h5>
+        <div class="container px-3 px-lg-0">
+            <h2 class="page-title">Participações</h2>
+            <div class="row pt-2">
+                {% for album in site.data.participacoes %}
+                <div class="col-12 col-md-6 mb-4 mb-lg-5 px-md-3">
+                    <img class="img-fluid ml-2 mb-1 float-right shadow" src="{{ site.baseurl }}{{ album.capa }}" alt="Capa do álbum {{ album.titulo }}" style="max-width: 120px;" />
+                    <div>
+                        <h3 class="h5 font-weight-bold border-bottom border-primary mb-2">{{ album.titulo }}</h3>
+                        <h4 class="h6 font-weight-bold">{{ album.obra }}</h4>
+                        <h5 class="h6 text-muted small">Composição: {{ album.composicao }}</h5>
                         <p class="text-muted small">Interpretação: {{ album.interpretacao }}</p>
                     </div>
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
     </section>
-</div>
+
