@@ -8,7 +8,7 @@ title: Albuns
             <div class="list-unstyled lista-albuns row justify-content-center">
                 {% assign albuns_ordered = site.albuns  | sort: 'ano'  %}
                 {% for album in albuns_ordered reversed %}
-                <div class="col-lg px-2 text-center text-md-left mb-4 mb-md-3" style="max-width: 15rem">
+                <div class="col-auto px-2 text-center text-md-left mb-4 mb-md-3" style="max-width: 200px">
                     <a href="{{ site.baseurl }}{{ album.url }}" class="text-reset text-decoration-none">
                         <img class="img-fluid mb-2 shadow-sm" src="{{ site.baseurl }}{{ album.capa }}" alt="Capa do álbum">
                         <h2 class="h6">{{ album.titulo }}</h2>
