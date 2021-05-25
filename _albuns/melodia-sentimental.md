@@ -3,7 +3,7 @@ layout: album
 title: Melodia Sentimental
 titulo: Melodia Sentimental
 artista: Luis Carlos Barbieri
-ano: 2020
+ano: 2016
 capa: /assets/albuns/melodia-sentimental/capa-melodia-sentimental.jpg
 faixas:
 - nome:
