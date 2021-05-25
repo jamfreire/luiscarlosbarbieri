@@ -9,7 +9,7 @@ dissertação [“Catálogo Geral e Revisão Crítica da Obra para Violão Solo 
 Schneiter”](/dissertacoes), sob a orientação da professora Dra. Márcia Taborda.
 
 ![Luis Carlos Barbieri]({{ site.baseurl }}/assets/fotos/barbieri_marcia_mello_2.jpg){: .w-100 .w-md-50 .my-2 }
-*Luis Carlos Barbieri - Foto: Alberto Lopes (2015)*{: .d-block .small }
+*Luis Carlos Barbieri - Foto: Márcia Mello*{: .d-block .small }
 {: .text-center }
 
 Ficou conhecido pelo seu trabalho no [Duo Barbieri-Schneiter](/duo-barbieri-schneiter), com o qual realizou, por 14 anos, concertos nas principais Salas do Brasil, além da Argentina, México, Itália, Áustria, Suíça e Portugal. Com o Duo gravou 3 CDs no Santuário Ecológico do Caraça (Minas Gerais – 1995/ 1996/ 1999). Em 2018, lançou o CD [“Memória: Bach e Mozart - Arquivo ao Vivo”](/album/memoria-bach-mozart) com gravações de concertos do Duo Barbieri-Schneiter (Sala Cecília Meireles/ 1988, Aliança Francesa da Tijuca/ 1991 e Auditório Guiomar Novaes/ 1992). A carreira do Duo foi interrompida com a morte prematura de Fred Schneiter, em 2001.
