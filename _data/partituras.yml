@@ -137,13 +137,10 @@
   formacao: Três Violões
   tipo: Editada
   link: partituras/Léo-Levante-e-vá-pra-escola-Editada.pdf
-
-- titulo: Léo, Levante e Vá Pra Escola
-  compositor: Fred Schneiter
-  ano: 1985
-  formacao: Três Violões
-  tipo:  Manuscrito
-  link: partituras/Léo-Levante-e-vá-pra-escola-Manuscrito.pdf
+  versoes:
+  - formacao: Três Violões
+    tipo:  Manuscrito
+    link: partituras/Léo-Levante-e-vá-pra-escola-Manuscrito.pdf
 
 - titulo: Suíte Baiana Nº 2
   compositor: Fred Schneiter
@@ -151,13 +148,10 @@
   formacao: Três Violões
   tipo: Editada
   link: partituras/Suíte-Baiana-Nº-2-Editada.pdf
-
-- titulo: Suíte Baiana Nº 2
-  compositor: Fred Schneiter
-  ano: 1984
-  formacao: Três Violões
-  tipo: Manuscrito
-  link: partituras/Suíte-Baiana-Nº-2-Manuscrito.pdf
+  versoes:
+  - formacao: Três Violões
+    tipo: Manuscrito
+    link: partituras/Suíte-Baiana-Nº-2-Manuscrito.pdf
 
 - titulo: Suíte Cravo
   compositor: Fred Schneiter
@@ -172,48 +166,30 @@
   formacao: Quatro Violões
   tipo: Manuscrito
   link: partituras/Suíte-Cravo-Quarteto-de-violões-Manuscrito.pdf
-
-- titulo: Suíte Cravo
-  compositor: Fred Schneiter
-  ano: 1984
-  formacao: Quatro Violões
-  tipo: Editada
-  link: partituras/Suíte-Cravo-Quarteto-de-violões-Editada.pdf
+  versoes:
+  - formacao: Quatro Violões
+    tipo: Editada
+    link: partituras/Suíte-Cravo-Quarteto-de-violões-Editada.pdf
 
 - titulo: Quarteto Nº 1
   compositor: Fred Schneiter
   ano: 1998
-  formacao: Clarone, Flauta, Violino e Violoncelo
+  formacao: Grade
   tipo: Editada
   link: partituras/Quarteto-Nº-1-Grade.pdf
-
-- titulo: Quarteto Nº 1
-  compositor: Fred Schneiter
-  ano: 1998
-  formacao: Flauta
-  tipo: Editada
-  link: partituras/Quarteto-Nº-1-Flauta.pdf
-
-- titulo: Quarteto Nº 1
-  compositor: Fred Schneiter
-  ano: 1998
-  formacao: Violino
-  tipo: Editada
-  link: partituras/Quarteto-Nº-1-Violino.pdf
-
-- titulo: Quarteto Nº 1
-  compositor: Fred Schneiter
-  ano: 1998
-  formacao: Violoncelo
-  tipo: Editada
-  link: partituras/Quarteto-Nº-1-Violoncelo.pdf
-
-- titulo: Quarteto Nº 1
-  compositor: Fred Schneiter
-  ano: 1998
-  formacao: Clarone in Bb
-  tipo: Editada
-  link: partituras/Quarteto-Nº-1-Clarone-in-Bb.pdf
+  versoes:
+  - formacao: Flauta
+    tipo: Editada
+    link: partituras/Quarteto-Nº-1-Flauta.pdf
+  - formacao: Violino
+    tipo: Editada
+    link: partituras/Quarteto-Nº-1-Violino.pdf
+  - formacao: Violoncelo
+    tipo: Editada
+    link: partituras/Quarteto-Nº-1-Violoncelo.pdf
+  - formacao: Clarone in Bb
+    tipo: Editada
+    link: partituras/Quarteto-Nº-1-Clarone-in-Bb.pdf
 
 - titulo: Suíte Nº 1
   compositor: Fred Schneiter
@@ -228,24 +204,18 @@
   formacao: Coral
   tipo: Editada
   link: partituras/Num-Jardim-Editada.pdf
-
-- titulo: Num Jardim
-  compositor: Fred Schneiter
-  ano: 1984
-  formacao: Coral
-  tipo: Manuscrito
-  link: partituras/Num-Jardim-Manuscrito.pdf
+  versoes:
+  - formacao: Coral
+    tipo: Manuscrito
+    link: partituras/Num-Jardim-Manuscrito.pdf
 
 - titulo: A Santa Ceia Segundo Atahyde
-  compositor: L.C. Barbieri
+  compositor: L. C. Barbieri
   ano: 1998
   formacao: Dois Violões
   tipo: Editada
   link: partituras/A-Santa-Ceia-Segundo-Athayde-Dois-violões.pdf
-
-- titulo: A Santa Ceia Segundo Atahyde
-  compositor: L.C. Barbieri
-  ano: 1998
-  formacao: Violão Solo
-  tipo: Editada
-  link: partituras/A-Santa-Ceia-Segundo-Athayde-SOLO.pdf
+  versoes:
+  - formacao: Violão Solo
+    tipo: Editada
+    link: partituras/A-Santa-Ceia-Segundo-Athayde-SOLO.pdf

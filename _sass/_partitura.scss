@@ -1,0 +1,14 @@
+.partituras-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.nav-composicao {
+    .nav-link.active,
+    .show > .nav-link {
+        color: theme-color("primary");
+        background-color: inherit;
+        border-bottom: 2px solid theme-color("primary");
+        border-radius: 0;
+    }
+}

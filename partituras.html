@@ -2,66 +2,72 @@
 layout: default
 title: Partituras
 ---
-<section class="section partituras">
-    <div class="container">
-        <h1 class="page-title">{{ page.title }}</h1>
-        <form id="buscaPartitura" class="form-inline align-items-center mb-4">
-            <div class="form-group">
-                <ul id="filtros" class="nav nav-pills" role="tablist">
-                    <a class="nav-link active" href="#all">Todos</a>
-                    <a class="nav-link" href="#barbieri">Barbieri</a>
-                    <a class="nav-link" href="#fred">Fred Schneiter</a>
-                </ul>
-            </div>
-            <!--<div class="form-group ms-sm-3">
-                <ul id="formacao" class="nav nav-pills" role="tablist">
-                    <a class="nav-link" href="#solo">Violão Solo</a>
-                    <a class="nav-link" href="#clarone">Clarone</a>
-                    <a class="nav-link" href="#flauta">Flauta</a>
-                    <a class="nav-link" href="#coral">Coral</a>
-                    <a class="nav-link" href="#violino">Violino</a>
-                    <a class="nav-link" href="#violoncelo">Violoncelo</a>
-                </ul>
-            </div>-->
-            <div class="form-group ml-md-auto">
-                <label for="buscaPartituraInput" class="sr-only">Buscar</label>
-                <input id="buscaPartituraInput" class="form-control" name="partitura" type="text" placeholder="Filtrar..." />
-            </div>
-        </form>
-        <div class="table-responsive">
-            <table class="table w-100">
-                <thead class="border-top-0">
-                    <tr>
-                        <th>Título</th>
-                        <th>Compositor</th>
-                        <th>Ano</th>
-                        <th>Edit/Manu</th>
-                        <th>Formação</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody id="partituraTable">
-                    {% assign partituras = site.data.partituras | sort: "titulo" %}
-                    {% for item in partituras %}
-                    <tr>
-                        <th scope="row">
-                            <a href="assets/{{ item.link }}" target="_blank">
-                                {{ item.titulo }}
-                            </a>
-                        </th>
-                        <td>{{ item.compositor }}</td>
-                        <td>{{ item.ano }}</td>
-                        <td>{{ item.tipo }}</td>
-                        <td>{{ item.formacao }}</td>
-                        <td>
-                            <a class="text-nowrap" href="assets/{{ item.link }}" download>
-                                <i class="fa fas fa-download"></i> <span class="d-none d-sm-inline">Baixar</span>
-                            </a>
-                        </td>
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
+<section class="partituras pb-5">
+    <div class="bg-dark text-light mb-4 pt-5 pb-3">
+        <div class="container text-center partituras-container">
+            <h2 class="page-title">{{ page.title }}</h2>
+            <form id="buscaPartitura">
+                <div class="form-group mb-4">
+                    <label for="buscaPartituraInput" class="sr-only">Buscar</label>
+                    <input id="buscaPartituraInput" class="form-control" name="partitura" type="search" placeholder="Pesquisar..." />
+                  </div>
+            </form>
         </div>
+    </div>
+    <div class="container partituras-container">
+        <nav class="navbar navbar-expand-md align-items-start p-0">
+            <button class="navbar-toggler pl-0 mb-2" type="button" data-toggle="collapse" data-target="#filtros" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-sliders"></i> Filtros
+            </button>
+            <div class="collapse navbar-collapse py-2 py-md-0" id="filtros">
+                <div class="mr-2">Compositor:</div>
+                <div class="nav nav-pills nav-composicao" id="composicao">
+                    <a class="nav-item nav-link active" href="#all" id="allComposicao">Todos</a>
+                    <a class="nav-item nav-link" href="#barbieri">L. C. Barbieri</a>
+                    <a class="nav-item nav-link" href="#fred">Fred Schneiter</a>
+                </div>
+                <div class="navbar-nav ml-md-auto pt-2">
+                    <label for="selectFormacao" class="pt-1 mr-2">Formação: </label>
+                    <select class="custom-select custom-select-sm" id="selectFormacao">
+                        <option value="all" selected>Todas</option>
+                            <optgroup label="Violões">
+                            <option value="solo">Violão solo</option>
+                            <option value="dois">2 violões</option>
+                            <option value="três">3 violões</option>
+                            <option value="quatro">4 violões</option>
+                        </optgroup>
+                        <option value="coral">Coral</option>
+                        <option value="violino">Flauta</option>
+                        <option value="violino">Violino</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+        <ul id="partituras" class="lista-partituras list-unstyled pt-1 border-top">
+            {% assign partituras = site.data.partituras | sort: "ano"  | sort: "titulo" %}
+            {% for item in partituras %}
+            <li class="partitura row border-bottom py-2 align-items-center">
+                <div class="col-auto pr-0">
+                    <i class="bi bi-file-earmark-text bi-3x"></i>
+                </div>
+                <div class="col col-md-auto mr-3 pt-2">
+                    <div>
+                        <h3 class="h5 font-weight-bold mb-1">{{ item.titulo }}</h3>
+                        <h4 class="h6 pb-2">
+                            {{ item.compositor }} {% if item.ano != null %}({{ item.ano }}) {% endif %}
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-12 col-md ml-auto text-md-right">
+                    <a href="assets/{{ item.link }}" class="btn btn-link" target="_blank" title="Abrir partitura">
+                        {{ item.formacao }} ({{ item.tipo }})
+                    </a>
+                    {% for versao in item.versoes  %}
+                    <span class="text-secondary">|</span><a class="btn btn-link" href="assets/{{ versao.link }}" target="_blank"  title="Abrir partitura">{{ versao.formacao }} ({{ versao.tipo }})</a>
+                    {% endfor %}
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
     </div>
 </section>

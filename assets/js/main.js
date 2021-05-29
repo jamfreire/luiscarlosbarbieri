@@ -1,4 +1,5 @@
-$(function(){
+$(function() {
+	"use strict";
 
 	$('body').scrollspy({
 		target: '#mainNav',
@@ -15,75 +16,53 @@ $(function(){
 	navbarCollapse();
 	$(window).scroll(navbarCollapse);
 
-	$("audio").on("play", function() {
-		var id = $(this).attr('id');
-	
-		$("audio").not(this).each(function(index, audio) {
-			audio.pause();
-		});
-	});
-
-	$('#pills-tab a').on('click', function (e) {
-		e.preventDefault()
-
-		$("audio").each(function(index, audio) {
-			audio.pause();
-		});
-		$(this).tab('show');
-	});
-
-	$('[data-toggle="play"]').on('click', function(e) {
-		e.preventDefault();
-
-		var target = $(this).data('target');
-		var player = $(target);
-		if (!(player[0].paused || player[0].muted)) {
-			player.trigger("pause");
-			$(this).closest('.subfaixa').find('.icon').addClass("icon-play").removeClass("icon-pause");
-		} else {
-			//$('audio').trigger("pause");
-			$('.icon').removeClass("icon-pause").addClass('icon-play');
-			player.trigger("play");
-			$(this).closest('.subfaixa').find('.icon').addClass("icon-pause").removeClass("icon-play");
+	// Partituras
+	var partituras;
+	function resetarFiltroPartitura() {
+		partituras = $(".partitura");
+		$("#composicao .nav-link").removeClass("active");
+		$("#allComposicao").addClass("active");
+		partituras.show();
+	}
+	function filtrarPartitura(term) {
+		resetarFiltroPartitura();
+		term = term.toLowerCase();
+		if(term !== "all") {
+			partituras.filter(function() {
+				$(this).toggle($(this).text().toLowerCase().indexOf(term) > -1);
+			});
 		}
-    });
+	}
+	function filtrarPartituraPorCompositor(compositor) {
+		$("#buscaPartituraInput").val('');
+		$( "#selectFormacao" ).val('all');
+		filtrarPartitura(compositor);
+	}
+	function filtrarPartituraPorFormacao(formacao) {
+		$("#buscaPartituraInput").val('');
+		filtrarPartitura(formacao);
+	}
+	function filtrarPartituraPorBusca(termo) {
+		$( "#selectFormacao" ).val('all');
+		filtrarPartitura(termo);
+	}
 
+	// Por busca:
 	$("#buscaPartituraInput").on("keyup", function() {
-		var value = $(this).val().toLowerCase();
-		$("#partituraTable tr").filter(function() {
-			$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-		});
+		filtrarPartituraPorBusca($(this).val());
 	});
-	
-	$("#filtros").on('click', '.nav-link', function() {
-		$('.nav-link').removeClass('active');
-		$(this).addClass("active");
-		var termo = $(this).attr('href').split("#")[1];
-		
-		if(termo === 'all') {
-			$("#partituraTable tr").filter(function() {
-				$(this).show();
-			});
-		} else {
-			$("#partituraTable tr").filter(function() {
-				$(this).toggle($(this).text().toLowerCase().indexOf(termo) > -1)
-			});
-		}
+	// Por compositor:
+	$("#composicao").on("click", ".nav-link", function() {
+		var navLink = $(this);
+
+		filtrarPartituraPorCompositor(navLink.attr('href').substring(1));
+
+		$("#composicao .nav-link").removeClass("active");
+		navLink.addClass("active");
+	});
+	$( "#selectFormacao" ).change(function() {
+		filtrarPartituraPorFormacao($(this).val());
 	});
 
-	$("#formacao").on('click', '.nav-link', function() {
-		$('.nav-link').removeClass('active');
-		$(this).addClass("active");
-		var termo = $(this).attr('href').split("#")[1];
-		
-		if(termo === 'all') {
-			$("#partituraTable tr").filter(function() {
-				$(this).show();
-			});
-		} else {
-			$("#partituraTable tr").filter(function() {
-				$(this).toggle($(this).text().toLowerCase().indexOf(termo) > -1)
-			});
-		}
-	});
+	resetarFiltroPartitura();
 });
