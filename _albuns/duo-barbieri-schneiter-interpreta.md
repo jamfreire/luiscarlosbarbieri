@@ -7,7 +7,7 @@ artista: Duo Barbieri-Schneiter
 ano: 2000
 capa: /assets/albuns/duo-barbieri-schneiter-interpreta/duo-barbieri-schneiter-interpreta.jpg
 faixas:
-- nome: "SUITE CARAÇA (L. C. Barbieri)"
+- nome: "Suíte Caraça (L. C. Barbieri)"
   subfaixas:
   - nome: "Mirante do Calvário"
     num: "01"
@@ -25,7 +25,7 @@ faixas:
   - nome: "Bocaina"
     num: "05"
     tempo: "3:14"
-- nome: "SUITE URBANA (F. Schneiter)"
+- nome: "Suíte Urbana (F. Schneiter)"
   subfaixas:
   - nome: "Luzes da Cidade"
     num: "06"
@@ -39,7 +39,7 @@ faixas:
   - nome: "Tempos Modernos"
     num: "09"
     tempo: "2:34"
-- nome: "DOIS MOMENTOS (L. C. Barbieri)"
+- nome: "Dois Momentos (L. C. Barbieri)"
   subfaixas:
   - nome: "Mergulho no Trágico"
     num: "10"
@@ -47,12 +47,12 @@ faixas:
   - nome: "Novembro"
     num: "11"
     tempo: "2:09"
-- nome: "PREPARAÇÃO E AUTO-RETRATO (F. Schneiter)"
+- nome: "Preparação e Auto-retrato(F. Schneiter)"
   subfaixas:
   - nome: "Preparação e Auto-retrato"
     num: "12"
     tempo: "3:47"
-- nome: "SUITE CARAÇA (F. Schneiter)"
+- nome: "Suíte Caraça (F. Schneiter)"
   subfaixas:
   - nome: "Porta do Céu"
     num: "13 "

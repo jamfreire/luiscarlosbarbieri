@@ -1,0 +1,65 @@
+$ALBUM_IMG_MAXWIDTH: 230px;
+
+.album-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.album-masthead {text-align: center;}
+.album-img {max-width: $ALBUM_IMG_MAXWIDTH;}
+
+.album-faixas {
+    padding-top: .5rem;
+    .faixa-title {
+        font-size: 18px;
+    }
+    .faixa-subtitle {
+        line-height: 1.125rem;
+    }
+    .faixa-img {
+        max-width: 64px;
+        border-radius: 4px;
+    }
+}
+
+.faixa-icon {
+    position: relative;
+    
+    &:hover > .faixa-link {
+        visibility: visible;
+    } 
+}
+
+.faixa-link {
+    visibility: hidden;
+}
+
+.faixa-play {
+    position: absolute;
+    top: 0;
+    right:0;
+    left:0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(24,24,24,.84);
+    color: #fff;
+    border-radius: 4px;
+}
+
+
+@media (min-width: 768px) {
+    .album-masthead {
+        text-align: left;
+    }
+  
+    .album-info {
+      padding-left: $ALBUM_IMG_MAXWIDTH + 30px;
+    }
+
+    .album-faixas {
+        clear: both;
+        padding-top: 30px;
+    }
+  }

@@ -7,7 +7,7 @@ artista: Luis Carlos Barbieri
 ano: 2002
 capa: /assets/albuns/barbieri-schneiter-solo/barbieri-schneiter-solo.jpg
 faixas:
-- nome: "FRED SCHNEITER – Suíte Baiana Nº 1"
+- nome: "Fred Schneiter – Suíte Baiana Nº 1"
   subfaixas:
   - nome: "Cyribubu"
     num: "01"
@@ -18,7 +18,7 @@ faixas:
   - nome: "Sambahia"
     num: "03"
     tempo: "2:28"
-- nome: "L. C. BARBIERI – Prelúdio e Dança Nº 1"
+- nome: "L. C. Barbieri – Prelúdio e Dança Nº 1"
   subfaixas:
   - nome: "Prelúdio"
     num: "04"
@@ -27,7 +27,7 @@ faixas:
     num: "05"
     tempo: "1:46"
     url: /assets/albuns/barbieri-schneiter-solo/05-danca.mp3
-- nome: "FRED SCHNEITER – Álbum de Família"
+- nome: "Fred Schneiter – Álbum de Família"
   subfaixas:
   - nome: "Pituba"
     num: "06"
@@ -44,7 +44,7 @@ faixas:
   - nome: "Dona Mab"
     num: "10"
     tempo: "1:52"
-- nome: "L. C. BARBIERI – 3 Estudos"
+- nome: "L. C. Barbieri – 3 Estudos"
   subfaixas:
   - nome: "Estudo 2"
     num: "11"
@@ -55,7 +55,7 @@ faixas:
   - nome: "Estudo 1"
     num: "13"
     tempo: "2:01"
-- nome: "FRED SCHNEITER – Garotice"
+- nome: "Fred Schneiter – Garotice"
   subfaixas:
   - nome: "Calmo"
     num: "14"
@@ -63,7 +63,7 @@ faixas:
   - nome: "Mais animado"
     num: "15"
     tempo: "1:49"
-- nome: "L. C. BARBIERI – 5 Perfumes"
+- nome: "L. C. Barbieri – 5 Perfumes"
   subfaixas:
   - nome: "Perfume 2"
     num: "16"
@@ -80,7 +80,7 @@ faixas:
   - nome: "Perfume 6"
     num: "20"
     tempo: "2:22"
-- nome: "FRED SCHNEITER – Suíte Sinuosa"
+- nome: "Fred Schneiter – Suíte Sinuosa"
   subfaixas:
   - nome: "Mar Grande"
     num: "21"
@@ -94,12 +94,12 @@ faixas:
   - nome: "Bestetu"
     num: "24"
     tempo: "2:11"
-- nome: "L. C. BARBIERI"
+- nome: "L. C. Barbieri"
   subfaixas:
   - nome: "A Santa Ceia Segundo Athayde (da Suíte Caraça)"
     num: "25"
     tempo: "4:11"
-- nome: "FRED SCHNEITER"
+- nome: "Fred Schneiter"
   subfaixas:
   - nome: "Onde Andará Nicanor?"
     num: "26"

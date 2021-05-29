@@ -6,10 +6,10 @@ layout: default
 <style>
     .navbar-main .navbar-brand {
         display: none;
-        animation: fadeout 1s;
+        animation: fadeout 2s;
     }
     .navbar-shrink .navbar-brand {
-        display: inline-block !important;
+        display: inline-block;
         animation: fadein .8s;
     }
 </style>
@@ -17,20 +17,22 @@ layout: default
 <div class="cover">
     <div class="container d-flex h-100">
         <div class="cover-content">
-            <a href="/"><img class="img-fluid d-none d-md-inline"
+            <a href="{{ '/' | relative_url }}"><img class="img-fluid d-none d-md-inline"
                     src="{{ site.baseurl }}/assets/images/logo-luis-carlos-barbieri.png"
-                    alt="Logo Luis Carlos Barbieri" /></a>
+                    alt="Luis Carlos Barbieri" />
+                    <span class="sr-only">Luis Carlos Barbieri</span>
+                </a>
         </div>
     </div>
 </div>
 
 <section class="biografia">
     <div class="container py-3 py-lg-5">
-        <div class="row justify-content-center">
-            <div class="col-md-4 col-lg-3 mb-3 d-none d-sm-inline-block">
+        <div class="row justify-content-center p-md-4">
+            <div class="col-md-4 col-lg-3 mb-2 d-none d-md-inline-block">
                 <a href="{{ site.baseurl }}/luis-carlos-barbieri" title="Ver biografia"><img src="{{ site.baseurl }}/assets/images/luis-carlos-barbieri.png" class="img-fluid mx-auto scale-up" /></a>
             </div>
-            <div class="col-md-8 px-lg-1">
+            <div class="col-md-8 px-lg-2 pt-md-2">
                 {{ content }}
             </div>
         </div>
@@ -39,16 +41,17 @@ layout: default
 
 <aside class="bg-primary text-white">
     <div class="container p-4 p-md-5">
-        <div class="text-center mx-auto">
+        <div class="text-center mx-auto px-lg-5">
             <h5 class="pb-2">Luis Carlos Barbieri coordena, desde 2004, a <strong>Mostra e Concurso Nacional de Violão
                     Fred Schneiter</strong> considerado um dos principais Concursos de Violão do Brasil.</h5>
-            <a href="http://www.mostrafred.com/" class="btn btn-outline-light" target="_blank">Conheça o site da
-                Mostra</a>
+            <a href="http://www.mostrafred.com/" class="btn btn-light text-primary font-weight-bold" target="_blank" rel="noopener">
+                Conheça o site da Mostra
+            </a>
         </div>
     </div>
 </aside>
 
-<section class="section discografia">
+<section class="section discografia pb-4">
     <div class="container text-center text-md-left">
         <h2 class="text-center mb-3 mb-lg-5">Álbuns</h2>
         {% include nav-albuns-carousel.html %}

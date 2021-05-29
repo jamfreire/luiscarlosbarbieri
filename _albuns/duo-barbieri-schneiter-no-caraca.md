@@ -7,7 +7,7 @@ artista: Duo Barbieri-Schneiter
 ano: 1996
 capa: /assets/albuns/duo-barbieri-schneiter-no-caraca/duo-barbieri-schneiter-no-caraca.jpg
 faixas:
-- nome: "JOÃO PERNAMBUCO"
+- nome: "João Pernambuco"
   subfaixas:
   - nome: "Sons de Carrilhões"
     num: "01"
@@ -21,7 +21,7 @@ faixas:
   - nome: "Interrogando"
     num: "04"
     tempo: "3’06”"
-- nome: "DILERMANDO REIS"
+- nome: "Dilermando Reis"
   subfaixas:
   - nome: "Dois Destinos"
     num: "05"
@@ -36,7 +36,7 @@ faixas:
     num: "08"
     tempo: "4’16”"
     url: /assets/albuns/duo-barbieri-schneiter-no-caraca/08-conversa-de-baiano.mp3
-- nome: "FRED SCHNEITER – Suíte Nº 1"
+- nome: "Fred Schneiter – Suíte Nº 1"
   subfaixas:
   - nome: "Lúdico"
     num: "09 "
@@ -50,7 +50,7 @@ faixas:
   - nome: "Fantasia sem Choro"
     num: "12"
     tempo: "2’27”"
-- nome: "LUIS CARLOS BARBIERI – Traços"
+- nome: "Luis Carlos Barbieri – Traços"
   subfaixas:
   - nome: "Mabinha"
     num: "13 "
@@ -61,7 +61,7 @@ faixas:
   - nome: "Minha Flô"
     num: "15"
     tempo: "3’11”"
-- nome: "GAROTO"
+- nome: "Garoto"
   subfaixas:
   - nome: "Naqueles Velhos Tempos"
     num: "16"

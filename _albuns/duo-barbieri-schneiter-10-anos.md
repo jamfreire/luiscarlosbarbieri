@@ -7,7 +7,7 @@ artista: Duo Barbieri-Schneiter
 ano: 1997
 capa: /assets/albuns/duo-barbieri-schneiter-10-anos/duo-barbieri-schneiter-10-anos.jpg
 faixas:
-- nome: "ANTONIO VIVALDI – Concerto em Ré Maior"
+- nome: "Antônio Vivaldi – Concerto em Ré Maior"
   subfaixas:
   - nome: "Allegro Giusto"
     num: "01"
@@ -18,7 +18,7 @@ faixas:
   - nome: "Allegro"
     num: "03"
     tempo: "2:06"
-- nome: "DOMENICO SCARLATTI"
+- nome: "Domenico Scarlatti"
   subfaixas:
   - nome: "Sonata L.103"
     num: "04"
@@ -29,7 +29,7 @@ faixas:
   - nome: "Sonata L.487"
     num: "06"
     tempo: "2:49"
-- nome: "LUIS CARLOS BARBIERI – Interiores, Luz e Bel"
+- nome: "Luis Carlos Barbieri – Interiores, Luz e Bel"
   subfaixas:
   - nome: "Interiores"
     num: "07"
@@ -41,12 +41,12 @@ faixas:
   - nome: "Bel"
     num: "09"
     tempo: "1:52"
-- nome: "FRED SCHNEITER"
+- nome: "Fed Schneiter"
   subfaixas:
   - nome: "Fantasia 521 (Homenagem a Ary Barroso)"
     num: "10 "
     tempo: "5:44"
-- nome: "ASTRO PIAZZOLLA"
+- nome: "Astro Piazzola"
   subfaixas:
   - nome: "Tango del Angel"
     num: "11"

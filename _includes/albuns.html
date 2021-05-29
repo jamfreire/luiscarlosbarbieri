@@ -1,0 +1,13 @@
+<div class="albuns-container">
+    <div class="list-unstyled lista-albuns row justify-content-sm-center">
+        {% assign albuns_ordered = site.albuns  | sort: 'ano'  %}
+        {% for album in albuns_ordered reversed %}
+        <div class="list-album-item col-auto px-2 text-center text-md-left mb-md-3" style="max-width: 200px">
+            <a href="{{ site.baseurl }}{{ album.url }}" class="text-reset text-decoration-none" title="{{ album.titulo }}">
+                <img class="img-fluid mb-2 shadow-sm" src="{{ site.baseurl }}{{ album.capa }}" alt="Capa do álbum">
+                <h2 class="album-title h6 text-truncate font-weight-bold">{{ album.titulo }}</h2>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>

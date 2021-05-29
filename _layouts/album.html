@@ -1,56 +1,74 @@
 ---
 layout: default
 ---
-<section class="section album">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-4 col-lg text-center">
-                <img src="{{ site.baseurl }}{{ page.capa }}" alt="{{ page.title }}" class="page-capa mb-4" />
-                <h1 class="h3">{{ page.titulo }}</h1>
+<section id="album" class="pb-5">
+    <div class="album-masthead bg-dark pt-4 pt-md-5 pb-3">
+        <div class="container album-container pt-md-2">
+            <div class="album-cover float-md-left">
+                <img src="{{ site.baseurl }}{{ page.capa }}" alt="{{ page.title }}" class="album-img img-fluid" />
+            </div>
+            <div class="album-info text-light">
+                <h1 class="h3 pt-4">{{ page.titulo }}</h1>
                 <h2 class="h5">{{ page.artista }}</h2>
                 <p>{{ page.ano }}</p>
             </div>
-            <div class="col-md-8">
-                <div id="playlist" class="faixas">
-                    {% for faixa in page.faixas %}
-                        {% if faixa.subfaixas != null %}
-                            {% if faixa.nome != null %}
-                            <h5 class="h6 font-weight-bold my-2 text-uppercase">{{ faixa.nome }}</h5>
-                            {% endif %}
-                            {% for subfaixa in faixa.subfaixas %}
-                            <div class="subfaixa d-flex py-2">
+        </div>
+    </div>
+    <div class="album-faixas">
+        <div class="container album-container">
+            <div id="playlist" class="faixas">
+                {% for faixa in page.faixas %}
+                    {% if faixa.subfaixas != null %}
+                        {% for subfaixa in faixa.subfaixas %}
+                        <div class="subfaixa d-flex align-items-center py-2 border-bottom border-light">
+                            <div class="mr-1">{{ subfaixa.num }}</div>
+                            <div class="faixa-icon mx-2">
+                                <img src="{{ site.baseurl }}{{ page.capa }}" alt="{{ page.title }}" class="img-fluid faixa-img" />
                                 {% if subfaixa.url != null %}
-                                <div>
-                                    <a role="button" href="#faixa{{subfaixa.num}}" data-toggle="play" data-target="#faixa{{subfaixa.num}}">
-                                        <span class="icon icon-play"></span>
+                                <!-- <a class="faixa-link" role="button" href="#faixa{{subfaixa.num}}" data-toggle="play" data-target="#faixa{{subfaixa.num}}">
+                                    <div class="faixa-play">
+                                        <span class="fa-stack" aria-hidden="true">
+                                            <i class="fa fa-circle-o fa-stack-2x text-primary" style="padding-left: 2px;"></i>
+                                            <i class="fa icon icon-play fa-stack-1x"></i>
+                                        </span>
                                         <span class="sr-only">Play/Pause</span>
-                                    </a>
-                                </div>
-                                <div  class="mx-2">
-                                    <a class="text-decoration-none" role="button" href="#faixa{{ subfaixa.num }}" data-toggle="play" data-target="#faixa{{ subfaixa.num }}">
-                                        {{ subfaixa.num }}
-                                    </a>
-                                </div>
-                                <div class="flex-grow-1 mr-3">
-                                    <a class="text-decoration-none" role="button" href="#faixa{{ subfaixa.num }}" data-toggle="play" data-target="#faixa{{ subfaixa.num }}">
-                                        {{ subfaixa.nome }}
-                                    </a>
-                                </div>
-                                <div class="ml-auto">{{ subfaixa.tempo }}</div>
-                                <audio type="audio/mpeg" class="audio-player" id="faixa{{subfaixa.num}}" src="{{ site.baseurl }}{{ subfaixa.url }}"></audio>
-                                {% else %}
-                                <div class="ml-4 mr-2">{{ subfaixa.num }}</div>
-                                <div class="flex-grow-1 mr-3">
-                                    {{ subfaixa.nome }}
-                                </div>
-                                <div class="ml-auto">{{ subfaixa.tempo }}</div>
+                                    </div>
+                                </a>
+                                <audio type="audio/mpeg" class="audio-player" id="faixa{{subfaixa.num}}" src="{{ site.baseurl }}{{ subfaixa.url }}"></audio> -->
                                 {% endif %}
                             </div>
-                            {% endfor %}
-                            <div class="py-2"></div>
-                        {% endif %}
-                    {% endfor %}
+                            <div class="mx-1">
+                                <h3 class="h5 font-weight-bold mb-1 faixa-title">
+                                    {{ subfaixa.nome }}
+                                </h3>
+                                <h4 class="h6 faixa-subtitle text-muted ">{{ faixa.nome }}</h4>
+                            </div>
+                            <div class="ml-auto pl-2">{{ subfaixa.tempo }}</div>
+                        </div>
+                        {% endfor %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="mais-albuns" class="section mt-md-5 pt-5 pb-4 border-top">
+    <div class="container album-container">
+        <h2 class="h5 mb-3"><a href="{{ '/albuns' | relative_url }}">Outros Álbuns</a></h2>
+    </div>
+    <div class="container album-container px-0 px-sm-4">
+        <div class="albuns-container">
+            <div class="list-unstyled lista-albuns row">
+                {% assign albuns_ordered = site.albuns  | sample:7  %}
+                {% for album in albuns_ordered reversed  %}
+                <div class="list-album-item col-auto px-1 text-center text-md-left" style="max-width: 200px">
+                    <a href="{{ site.baseurl }}{{ album.url }}" class="text-reset text-decoration-none" title="{{ album.titulo }}">
+                        <img class="img-fluid mb-2 shadow-sm" src="{{ site.baseurl }}{{ album.capa }}" alt="Capa do álbum" style="max-width: 126px">
+                        <h2 class="sr-only">{{ album.titulo }}</h2>
+                    </a>
                 </div>
+                {% endfor %}
             </div>
         </div>
     </div>
